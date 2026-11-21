@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BrandWordmark } from '@/components/ui/BrandWordmark';
 import { Monogram } from '@/components/ui/Monogram';
-import { RotateCcw, Heart, Shield } from 'lucide-react';
+import { RotateCcw, Shield } from 'lucide-react';
 
 export const FinaleScene: React.FC = () => {
   const replayStory = () => {
@@ -33,7 +33,7 @@ export const FinaleScene: React.FC = () => {
         </span>
       </motion.div>
 
-      {/* Central Finale Composition */}
+      {/* Central Finale Composition K & N */}
       <div className="z-20 my-auto max-w-4xl mx-auto flex flex-col items-center relative">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
@@ -55,22 +55,33 @@ export const FinaleScene: React.FC = () => {
             Six Years.
           </h2>
           <h3 className="font-serif italic text-3xl sm:text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blush-200 via-rosegold-300 to-blush-200 font-light">
-            Still My Favourite Story.
+            One Beautiful Story.
           </h3>
           <p className="font-sans text-xs sm:text-sm uppercase tracking-[0.28em] text-rosegold-300 mt-4">
             23 November 2020 — Forever
           </p>
         </motion.div>
 
-        {/* Concluding Devotional Note */}
+        {/* Concluding Devotional Quote as requested */}
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.0, delay: 0.5 }}
-          className="font-serif italic text-base sm:text-xl text-ivory-50/80 max-w-2xl mt-8 leading-relaxed font-light"
+          className="font-serif italic text-xl sm:text-2xl md:text-3xl text-blush-200/95 max-w-2xl mt-8 leading-relaxed font-light"
         >
-          &ldquo;Thank you for every laughter-filled day, every quiet holding of hands, and every promise kept. Here is to our six years, and to the thousands of memories waiting for us ahead.&rdquo;
+          &ldquo;Out of all the moments life could have given me, I am grateful that it gave me you.&rdquo;
+        </motion.p>
+
+        {/* Subline */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.0, delay: 0.7 }}
+          className="font-sans text-xs uppercase tracking-[0.22em] text-ivory-50/70 mt-4"
+        >
+          Six Years. One Story. A Thousand Feelings. A Lifetime of Memories Yet to Come.
         </motion.p>
 
         {/* Replay Story Action Button */}
@@ -78,8 +89,8 @@ export const FinaleScene: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.9, delay: 0.7 }}
-          className="mt-12"
+          transition={{ duration: 0.9, delay: 0.8 }}
+          className="mt-10"
         >
           <button
             onClick={replayStory}
@@ -92,16 +103,16 @@ export const FinaleScene: React.FC = () => {
         </motion.div>
       </div>
 
-      {/* Footer Branding & Dev/Personalization Notice */}
+      {/* Footer Branding K & N */}
       <footer className="z-10 w-full max-w-5xl mx-auto pt-16 border-t border-rosegold-400/20 flex flex-col sm:flex-row items-center justify-between text-xs text-ivory-50/50">
         <div className="flex items-center space-x-3 mb-4 sm:mb-0">
           <Monogram size={32} />
           <div className="flex flex-col text-left">
             <span className="font-serif text-sm tracking-[0.2em] text-ivory-50 uppercase">
-              KAUSEEN
+              K & N
             </span>
             <span className="text-[9px] uppercase tracking-[0.2em] text-rosegold-300">
-              Private Anniversary Keepsake
+              Private Sixth Anniversary Keepsake
             </span>
           </div>
         </div>

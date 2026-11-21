@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('KAUSEEN Cinematic Love Story E2E & Visual Verification', () => {
+test.describe('K & N Cinematic Love Story E2E & Visual Verification', () => {
   test.beforeEach(async ({ page }) => {
     // Navigate to local server
     await page.goto('http://localhost:3000', { waitUntil: 'networkidle' });
@@ -57,80 +57,101 @@ test.describe('KAUSEEN Cinematic Love Story E2E & Visual Verification', () => {
       await page.waitForTimeout(400);
     }
 
-    // 5. Letters Scene (Closed & Opened)
+    // 5. Quote Journey Scene
+    const quoteJourney = page.locator('#quotes-journey');
+    await quoteJourney.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(600);
+    await expect(quoteJourney).toBeVisible();
+    await page.screenshot({ path: 'tests/screenshots/05-quotes-journey.png' });
+
+    // Test interactive random love note generator button
+    const drawBtn = page.locator('button:has-text("Draw a Random Love Note")');
+    if (await drawBtn.isVisible()) {
+      await drawBtn.click();
+      await page.waitForTimeout(600);
+      await page.screenshot({ path: 'tests/screenshots/05-quotes-random-note.png' });
+    }
+
+    // 6. Letters Scene (Closed & Opened)
     const letters = page.locator('#letters');
     await letters.scrollIntoViewIfNeeded();
     await page.waitForTimeout(600);
-    await page.screenshot({ path: 'tests/screenshots/05-letter-closed.png' });
+    await page.screenshot({ path: 'tests/screenshots/06-letter-closed.png' });
 
     // Open the letter
     const openLetterBtn = page.locator('text=Open Your Letter');
     if (await openLetterBtn.isVisible()) {
       await openLetterBtn.click();
       await page.waitForTimeout(800);
-      await page.screenshot({ path: 'tests/screenshots/05-letter-opened.png' });
+      await page.screenshot({ path: 'tests/screenshots/06-letter-opened.png' });
     }
 
-    // 6. Audio Player (Collapsed & Expanded)
+    // 7. Audio Player (Collapsed & Expanded)
     const audioPlayer = page.locator('.fixed.bottom-6.right-6');
     await expect(audioPlayer).toBeVisible();
-    await page.screenshot({ path: 'tests/screenshots/06-player-collapsed.png' });
+    await page.screenshot({ path: 'tests/screenshots/07-player-collapsed.png' });
 
     // Click vinyl to expand
     await audioPlayer.locator('[title="Expand player"]').click({ force: true });
     await page.waitForTimeout(600);
-    await page.screenshot({ path: 'tests/screenshots/06-player-expanded.png' });
+    await page.screenshot({ path: 'tests/screenshots/07-player-expanded.png' });
 
-    // 7. Surprise Interaction
+    // 8. Surprise Interaction
     const surprise = page.locator('#surprise');
     await surprise.scrollIntoViewIfNeeded();
     await page.waitForTimeout(600);
-    await page.screenshot({ path: 'tests/screenshots/07-surprise-sealed.png' });
+    await page.screenshot({ path: 'tests/screenshots/08-surprise-sealed.png' });
 
     // Trigger quick unlock
     const unlockBtn = page.locator('text=Quick Unlock Alternative');
     if (await unlockBtn.isVisible()) {
       await unlockBtn.click();
       await page.waitForTimeout(800);
-      await page.screenshot({ path: 'tests/screenshots/07-surprise-unlocked.png' });
+      await page.screenshot({ path: 'tests/screenshots/08-surprise-unlocked.png' });
     }
 
-    // 8. Counter & Quotes
+    // 9. Counter
     const counter = page.locator('#counter');
     await counter.scrollIntoViewIfNeeded();
     await page.waitForTimeout(600);
-    await page.screenshot({ path: 'tests/screenshots/08-counter-and-quotes.png' });
+    await page.screenshot({ path: 'tests/screenshots/09-counter-scene.png' });
 
-    // 9. Grand Finale
+    // 10. Grand Finale
     const finale = page.locator('#finale');
     await finale.scrollIntoViewIfNeeded();
     await page.waitForTimeout(600);
-    await page.screenshot({ path: 'tests/screenshots/09-finale-desktop.png' });
+    await page.screenshot({ path: 'tests/screenshots/10-finale-desktop.png' });
   });
 
   test('Mobile Responsive Composition (iPhone 390px)', async ({ page }) => {
     await page.setViewportSize({ width: 390, height: 844 });
 
     // Mobile Hero
-    await page.screenshot({ path: 'tests/screenshots/10-mobile-hero.png' });
+    await page.screenshot({ path: 'tests/screenshots/11-mobile-hero.png' });
 
     // Mobile Timeline
     const timeline = page.locator('#timeline');
     await timeline.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
-    await page.screenshot({ path: 'tests/screenshots/11-mobile-timeline.png' });
+    await page.screenshot({ path: 'tests/screenshots/12-mobile-timeline.png' });
 
     // Mobile Gallery
     const gallery = page.locator('#gallery');
     await gallery.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
-    await page.screenshot({ path: 'tests/screenshots/12-mobile-gallery.png' });
+    await page.screenshot({ path: 'tests/screenshots/13-mobile-gallery.png' });
+
+    // Mobile Quote Journey
+    const quoteJourney = page.locator('#quotes-journey');
+    await quoteJourney.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(500);
+    await page.screenshot({ path: 'tests/screenshots/14-mobile-quotes.png' });
 
     // Mobile Letters
     const letters = page.locator('#letters');
     await letters.scrollIntoViewIfNeeded();
     await page.waitForTimeout(500);
-    await page.screenshot({ path: 'tests/screenshots/13-mobile-letters.png' });
+    await page.screenshot({ path: 'tests/screenshots/15-mobile-letters.png' });
 
     // Verify No Horizontal Overflow
     const scrollWidth = await page.evaluate(() => document.documentElement.scrollWidth);

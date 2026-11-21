@@ -25,7 +25,7 @@ const pinyonScript = Pinyon_Script({
 });
 
 export const metadata: Metadata = {
-  title: `${SITE_CONFIG.brandName} — ${SITE_CONFIG.brandLine}`,
+  title: `${SITE_CONFIG.brandName} — ${SITE_CONFIG.tagline}`,
   description: SITE_CONFIG.cinematicSubtitle,
   robots: {
     index: false,

@@ -11,11 +11,12 @@ import { CustomCursor } from '@/components/ui/CustomCursor';
 import { Lightbox } from '@/components/ui/Lightbox';
 import { DevPersonalizationBadge } from '@/components/ui/DevPersonalizationBadge';
 
-// 9 Scenes
+// The Cinematic Scenes
 import { HeroScene } from '@/components/sections/HeroScene';
 import { InfinityScene } from '@/components/sections/InfinityScene';
 import { TimelineScene } from '@/components/sections/TimelineScene';
 import { GalleryScene } from '@/components/sections/GalleryScene';
+import { QuoteJourneyScene } from '@/components/sections/QuoteJourneyScene';
 import { LettersScene } from '@/components/sections/LettersScene';
 import { SongsScene } from '@/components/sections/SongsScene';
 import { SurpriseScene } from '@/components/sections/SurpriseScene';
@@ -53,12 +54,13 @@ export default function Home() {
         {/* Dev Personalization Guide Badge */}
         <DevPersonalizationBadge />
 
-        {/* THE 9 CINEMATIC SCENES */}
+        {/* THE COMPLETE STORY ARC */}
         <main className="relative z-10 w-full overflow-hidden">
           <HeroScene />
           <InfinityScene />
           <TimelineScene />
           <GalleryScene />
+          <QuoteJourneyScene />
           <LettersScene />
           <SongsScene />
           <SurpriseScene />

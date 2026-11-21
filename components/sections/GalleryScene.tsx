@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { GALLERY_COMPOSITIONS } from '@/content/gallery';
 import { useAppStore } from '@/lib/store';
 import Image from 'next/image';
-import { Eye, Film } from 'lucide-react';
+import { Eye, Film, Sparkles } from 'lucide-react';
 
 export const GalleryScene: React.FC = () => {
   const { openLightbox } = useAppStore();
@@ -15,6 +15,7 @@ export const GalleryScene: React.FC = () => {
   const portraitComp = GALLERY_COMPOSITIONS.find((c) => c.id === 'vertical-portraits')!;
   const filmstripComp = GALLERY_COMPOSITIONS.find((c) => c.id === 'filmstrip-scroller')!;
   const polaroidComp = GALLERY_COMPOSITIONS.find((c) => c.id === 'polaroid-cluster')!;
+  const collagesComp = GALLERY_COMPOSITIONS.find((c) => c.id === 'story-collages')!;
 
   return (
     <section
@@ -28,10 +29,10 @@ export const GalleryScene: React.FC = () => {
             Scene IV · Curated Memories
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-ivory-50 tracking-[0.05em]">
-            The Gallery of Us
+            The Memory Gallery
           </h2>
           <p className="font-sans text-xs sm:text-sm text-ivory-50/70 uppercase tracking-[0.22em] mt-3">
-            Five Editorial Chapters in Shared Light
+            Six Curated Chapters in Shared Light & Devotion
           </p>
         </div>
 
@@ -63,7 +64,7 @@ export const GalleryScene: React.FC = () => {
                 <span className="text-[10px] uppercase tracking-[0.25em] text-rosegold-300">
                   {asymmetricComp.items[0].date}
                 </span>
-                <h4 className="font-serif text-xl text-ivory-50 mt-1">
+                <h4 className="font-serif text-xl sm:text-2xl text-ivory-50 mt-1">
                   {asymmetricComp.items[0].title}
                 </h4>
                 <p className="text-xs text-ivory-50/80 italic mt-1 font-serif">
@@ -181,14 +182,12 @@ export const GalleryScene: React.FC = () => {
 
           {/* Film Strip Frame with Perforations */}
           <div className="relative bg-wine-990 border-y-4 border-black p-4 sm:p-6 shadow-luxury overflow-x-auto scrollbar-none">
-            {/* Top Film Sprockets */}
             <div className="flex space-x-3 mb-4 opacity-50">
               {Array.from({ length: 28 }).map((_, i) => (
                 <div key={i} className="w-3.5 h-2.5 rounded-sm bg-white/20 flex-shrink-0" />
               ))}
             </div>
 
-            {/* Film Frames */}
             <div className="flex space-x-6 min-w-max pb-2">
               {filmstripComp.items.map((item, idx) => (
                 <div
@@ -213,7 +212,6 @@ export const GalleryScene: React.FC = () => {
               ))}
             </div>
 
-            {/* Bottom Film Sprockets */}
             <div className="flex space-x-3 mt-4 opacity-50">
               {Array.from({ length: 28 }).map((_, i) => (
                 <div key={i} className="w-3.5 h-2.5 rounded-sm bg-white/20 flex-shrink-0" />
@@ -238,7 +236,7 @@ export const GalleryScene: React.FC = () => {
                   key={item.id}
                   whileHover={{ y: -8, rotate: 0, scale: 1.03 }}
                   transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-                  onClick={() => openLightbox(9 + idx)}
+                  onClick={() => openLightbox(10 + idx)}
                   className={`bg-[#FAF5F0] p-4 pb-8 rounded-sm shadow-luxury-lg cursor-pointer transform ${rotations[idx % 3]} group`}
                   data-cursor="view"
                 >
@@ -263,6 +261,43 @@ export const GalleryScene: React.FC = () => {
             })}
           </div>
         </div>
+
+        {/* COMPOSITION 6: Romantic Story Collages */}
+        {collagesComp && (
+          <div className="space-y-6">
+            <div className="flex items-center space-x-3 text-rosegold-300">
+              <Sparkles size={18} />
+              <span className="text-xs uppercase tracking-[0.25em]">Chapter VI</span>
+              <span className="h-[1px] w-12 bg-rosegold-400/30" />
+              <h3 className="font-serif text-xl sm:text-2xl text-ivory-50">{collagesComp.title}</h3>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 pt-4">
+              {collagesComp.items.map((item, idx) => (
+                <motion.div
+                  key={item.id}
+                  whileHover={{ y: -6, scale: 1.02 }}
+                  transition={{ duration: 0.35 }}
+                  onClick={() => openLightbox(13 + idx)}
+                  className="relative h-[440px] sm:h-[500px] rounded-3xl overflow-hidden border border-rosegold-400/40 shadow-luxury-lg cursor-pointer group"
+                  data-cursor="view"
+                >
+                  <Image
+                    src={item.src}
+                    alt={item.alt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-wine-990/90 via-transparent to-transparent opacity-75 group-hover:opacity-90 transition-opacity" />
+                  <div className="absolute bottom-6 left-6 right-6 text-center">
+                    <h4 className="font-serif text-xl text-ivory-50">{item.title}</h4>
+                    <p className="text-xs text-ivory-50/80 italic mt-1 font-serif">{item.caption}</p>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

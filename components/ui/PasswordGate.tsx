@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { SITE_CONFIG } from '@/content/site';
 import { Monogram } from './Monogram';
-import { Lock, KeyRound } from 'lucide-react';
+import { KeyRound } from 'lucide-react';
 
 export const PasswordGate: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [unlocked, setUnlocked] = useState(!SITE_CONFIG.enablePasscodeGate);
@@ -47,10 +47,10 @@ export const PasswordGate: React.FC<{ children: React.ReactNode }> = ({ children
       >
         <Monogram size={64} />
         <h2 className="font-serif text-3xl tracking-[0.2em] text-ivory-50 uppercase mt-6">
-          KAUSEEN
+          K & N
         </h2>
         <p className="font-sans text-xs uppercase tracking-[0.25em] text-rosegold-300 mt-2">
-          A Private Anniversary Keepsake
+          Six Years · One Story
         </p>
 
         <p className="font-serif italic text-sm text-ivory-50/70 mt-6">

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { TIMELINE_DATA, TimelineMilestone } from '@/content/timeline';
 import { useAppStore } from '@/lib/store';
 import Image from 'next/image';
-import { ChevronLeft, ChevronRight, Calendar, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Calendar } from 'lucide-react';
 
 export const TimelineScene: React.FC = () => {
   const { selectedYear, setSelectedYear, openLightbox } = useAppStore();
@@ -26,7 +26,6 @@ export const TimelineScene: React.FC = () => {
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      // Check if timeline is visible in viewport before capturing arrows
       const el = document.getElementById('timeline');
       if (!el) return;
       const rect = el.getBoundingClientRect();
@@ -51,7 +50,7 @@ export const TimelineScene: React.FC = () => {
             Scene III · Six Years of Devotion
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-ivory-50 tracking-[0.05em]">
-            Six Years, Countless Memories
+            Six Years, One Journey
           </h2>
           <p className="font-sans text-xs sm:text-sm text-ivory-50/70 uppercase tracking-[0.22em] mt-3">
             23 November 2020 through 23 November 2026
@@ -101,7 +100,7 @@ export const TimelineScene: React.FC = () => {
           })}
         </div>
 
-        {/* Active Milestone Stage (Editorial Layout) */}
+        {/* Active Milestone Stage */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeMilestone.year}
@@ -119,7 +118,7 @@ export const TimelineScene: React.FC = () => {
                 data-cursor="view"
               >
                 <Image
-                  src={activeMilestone.photos[0]?.src || '/photos/inspiration/scrapbook-our-story.jpg'}
+                  src={activeMilestone.photos[0]?.src || '/images/our-story/portraits/DSC_0111_1.JPG'}
                   alt={activeMilestone.photos[0]?.alt || 'Milestone photo'}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-700 ease-silk"

@@ -4,13 +4,14 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Monogram } from './Monogram';
 import { useAppStore } from '@/lib/store';
-import { Menu, X, Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { Menu, X, Volume2, VolumeX } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'Overture', href: '#hero' },
   { label: 'The Infinity', href: '#infinity' },
   { label: 'Six Years', href: '#timeline' },
   { label: 'Our Gallery', href: '#gallery' },
+  { label: 'Quotes', href: '#quotes-journey' },
   { label: 'Letters', href: '#letters' },
   { label: 'Soundtrack', href: '#soundtrack' },
   { label: 'Surprise', href: '#surprise' },
@@ -21,7 +22,7 @@ const NAV_LINKS = [
 export const Navigation: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { isPlaying, isMuted, toggleMute, timeTravelMode, setTimeTravelMode } = useAppStore();
+  const { isMuted, toggleMute } = useAppStore();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,7 +50,7 @@ export const Navigation: React.FC = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 sm:px-8 flex items-center justify-between">
-          {/* Brand Monogram & Name */}
+          {/* Brand Monogram & Name K & N */}
           <a
             href="#hero"
             onClick={(e) => {
@@ -57,21 +58,21 @@ export const Navigation: React.FC = () => {
               handleLinkClick('#hero');
             }}
             className="flex items-center space-x-3 group cursor-pointer"
-            aria-label="KAUSEEN Home"
+            aria-label="K & N Home"
           >
             <Monogram size={38} className="group-hover:scale-105 transition-transform" />
             <div className="flex flex-col">
               <span className="font-serif text-lg tracking-[0.25em] text-ivory-50 group-hover:text-blush-200 transition-colors uppercase">
-                KAUSEEN
+                K & N
               </span>
               <span className="text-[9px] tracking-[0.22em] text-rosegold-300 uppercase">
-                Six Years
+                Six Years · One Story
               </span>
             </div>
           </a>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden lg:flex items-center space-x-7">
+          <nav className="hidden lg:flex items-center space-x-6 xl:space-x-7">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
@@ -90,7 +91,6 @@ export const Navigation: React.FC = () => {
 
           {/* Controls & Quick Actions */}
           <div className="flex items-center space-x-3 sm:space-x-4">
-            {/* Quick Sound Mute Button */}
             <button
               onClick={toggleMute}
               className="p-2 rounded-full border border-rosegold-400/30 text-ivory-50/90 hover:text-rosegold-300 hover:border-rosegold-400/60 transition-all"
@@ -122,14 +122,14 @@ export const Navigation: React.FC = () => {
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="fixed inset-0 z-30 bg-wine-950/95 backdrop-blur-xl flex flex-col justify-center px-8 lg:hidden"
           >
-            <div className="flex flex-col space-y-6 text-center">
+            <div className="flex flex-col space-y-5 text-center">
               {NAV_LINKS.map((link, idx) => (
                 <motion.a
                   key={link.href}
                   href={link.href}
                   initial={{ opacity: 0, y: 15 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: idx * 0.05 + 0.1 }}
+                  transition={{ delay: idx * 0.04 + 0.08 }}
                   onClick={(e) => {
                     e.preventDefault();
                     handleLinkClick(link.href);
@@ -140,7 +140,7 @@ export const Navigation: React.FC = () => {
                 </motion.a>
               ))}
 
-              <div className="pt-6 border-t border-rosegold-400/20 flex justify-center space-x-4">
+              <div className="pt-6 border-t border-rosegold-400/20 flex justify-center">
                 <button
                   onClick={toggleMute}
                   className="px-5 py-2.5 rounded-full border border-rosegold-400/40 text-xs tracking-[0.2em] uppercase text-ivory-50 flex items-center space-x-2"

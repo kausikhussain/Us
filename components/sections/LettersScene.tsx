@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { LETTERS_DATA, LoveLetter } from '@/content/letters';
 import { useAppStore } from '@/lib/store';
 import { Monogram } from '@/components/ui/Monogram';
-import { Printer, Mail, Sparkles, FastForward, CheckCircle2 } from 'lucide-react';
+import { Printer, Mail, FastForward } from 'lucide-react';
 
 export const LettersScene: React.FC = () => {
   const {
@@ -50,7 +50,7 @@ export const LettersScene: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs uppercase tracking-[0.3em] text-rosegold-300 mb-3 block">
-            Scene V · Words in Ink
+            Scene VI · Words in Ink
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl text-ivory-50 tracking-[0.05em]">
             Words I Could Never Fit Into a Moment
@@ -101,7 +101,7 @@ export const LettersScene: React.FC = () => {
                 {/* Envelope Flap Lines */}
                 <div className="absolute top-0 inset-x-0 h-32 border-b border-rosegold-400/30 pointer-events-none" />
 
-                {/* Wax Seal with Monogram */}
+                {/* Wax Seal with Monogram K & N */}
                 <motion.div
                   whileHover={{ scale: 1.08 }}
                   transition={{ duration: 0.3 }}
@@ -144,7 +144,7 @@ export const LettersScene: React.FC = () => {
                     <Monogram size={42} />
                     <div className="flex flex-col">
                       <span className="font-serif text-lg tracking-[0.2em] text-burgundy-900 uppercase">
-                        KAUSEEN
+                        K & N
                       </span>
                       <span className="text-[10px] uppercase tracking-[0.2em] text-neutral-500">
                         Private Keepsake

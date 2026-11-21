@@ -3,7 +3,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { BrandWordmark } from '@/components/ui/BrandWordmark';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Sparkles } from 'lucide-react';
 
 export const HeroScene: React.FC = () => {
   const scrollToInfinity = () => {
@@ -41,7 +41,7 @@ export const HeroScene: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.3, ease: [0.22, 1, 0.36, 1], delay: 0.5 }}
+          transition={{ duration: 1.3, ease: [0.22, 1, 0.36, 1], delay: 0.4 }}
         >
           <BrandWordmark size="hero" showSubtitle={false} animated />
         </motion.div>
@@ -49,7 +49,7 @@ export const HeroScene: React.FC = () => {
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.8 }}
+          transition={{ duration: 1.1, ease: [0.22, 1, 0.36, 1], delay: 0.7 }}
           className="font-serif italic text-xl sm:text-2xl md:text-3xl text-blush-200 mt-6 max-w-2xl font-light leading-relaxed"
         >
           23 November 2020 — Forever
@@ -58,34 +58,46 @@ export const HeroScene: React.FC = () => {
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 1.0 }}
-          className="mt-4"
+          transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.9 }}
+          className="mt-3"
         >
           <h2 className="font-sans text-xs sm:text-sm uppercase tracking-[0.28em] text-ivory-50/80">
-            Six Years. One Beautiful Story.
+            Six Years. One Story. A Thousand Feelings.
           </h2>
+        </motion.div>
+
+        {/* Featured Editorial Quote in Hero */}
+        <motion.div
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.1, delay: 1.1 }}
+          className="mt-6 max-w-2xl px-6 py-4 rounded-2xl bg-burgundy-900/30 border border-rosegold-400/20 backdrop-blur-sm"
+        >
+          <p className="font-serif italic text-base sm:text-lg text-ivory-50/90 font-light leading-relaxed">
+            &ldquo;Six Years. Countless Little Moments. One Person Who Makes Them All Special.&rdquo;
+          </p>
         </motion.div>
 
         {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.0, ease: [0.22, 1, 0.36, 1], delay: 1.2 }}
-          className="flex flex-col sm:flex-row items-center gap-4 mt-10"
+          transition={{ duration: 1.0, ease: [0.22, 1, 0.36, 1], delay: 1.3 }}
+          className="flex flex-col sm:flex-row items-center gap-4 mt-8"
         >
           <button
             onClick={scrollToInfinity}
             className="px-8 py-3.5 rounded-full bg-gradient-to-r from-crimson-600 to-burgundy-900 text-ivory-50 text-xs uppercase tracking-[0.25em] border border-rosegold-400/40 shadow-crimson-glow hover:scale-105 active:scale-95 transition-all group"
             data-cursor="play"
           >
-            <span>Enter Our Story</span>
+            <span>Enter Our Little World</span>
           </button>
 
           <button
             onClick={scrollToTimeline}
             className="px-6 py-3.5 rounded-full bg-wine-950/60 backdrop-blur-md text-ivory-50/80 text-xs uppercase tracking-[0.22em] border border-rosegold-400/20 hover:text-rosegold-300 hover:border-rosegold-400/50 transition-all"
           >
-            Skip to Timeline
+            Explore Our Story
           </button>
         </motion.div>
       </div>

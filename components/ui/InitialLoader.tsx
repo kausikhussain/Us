@@ -36,20 +36,20 @@ export const InitialLoader: React.FC = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="fixed inset-0 z-50 bg-wine-950 flex flex-col items-center justify-center p-6 select-none"
         >
-          {/* Central Monogram */}
+          {/* Central Monogram K & N */}
           <motion.div
             initial={{ scale: 0.85, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col items-center"
           >
-            <Monogram size={72} drawAnimation />
+            <Monogram size={72} />
 
-            <h1 className="font-serif text-2xl sm:text-3xl tracking-[0.3em] uppercase text-ivory-50 mt-6">
-              KAUSEEN
+            <h1 className="font-serif text-3xl sm:text-4xl tracking-[0.3em] uppercase text-ivory-50 mt-6">
+              K & N
             </h1>
             <span className="text-[10px] tracking-[0.25em] text-rosegold-300 uppercase mt-2">
-              Six Years · One Beautiful Story
+              Six Years · One Story · A Thousand Feelings
             </span>
 
             {/* Fine Progress Line */}

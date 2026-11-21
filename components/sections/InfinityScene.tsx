@@ -57,13 +57,13 @@ export const InfinityScene: React.FC = () => {
             >
               <path
                 d="M 150,70 C 190,10 280,10 280,70 C 280,130 190,130 150,70 C 110,10 20,10 20,70 C 20,130 110,130 150,70 Z"
-                stroke="url(#infinity-stroke)"
+                stroke="url(#kn-infinity-stroke)"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 className="opacity-90"
               />
               <defs>
-                <linearGradient id="infinity-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+                <linearGradient id="kn-infinity-stroke" x1="0%" y1="0%" x2="100%" y2="0%">
                   <stop offset="0%" stopColor="#E8BBC7" />
                   <stop offset="50%" stopColor="#C99A83" />
                   <stop offset="100%" stopColor="#B83250" />
@@ -71,8 +71,8 @@ export const InfinityScene: React.FC = () => {
               </defs>
             </svg>
 
-            {/* Center Monogram Emblem */}
-            <div className="absolute inset-0 m-auto w-16 h-16 flex items-center justify-center bg-wine-950/80 rounded-full border border-rosegold-400/50 shadow-luxury">
+            {/* Center Monogram Emblem K & N */}
+            <div className="absolute inset-0 m-auto w-16 h-16 flex items-center justify-center bg-wine-950/85 rounded-full border border-rosegold-400/50 shadow-luxury">
               <Monogram size={42} />
             </div>
           </div>
@@ -84,24 +84,24 @@ export const InfinityScene: React.FC = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1.0, delay: 0.3 }}
-          className="font-serif italic text-lg sm:text-2xl text-ivory-50/85 max-w-2xl leading-relaxed"
+          className="font-serif italic text-lg sm:text-2xl text-ivory-50/90 max-w-2xl leading-relaxed"
         >
           &ldquo;Two separate lives, two individual stories, drawn together by quiet destiny into an unbreakable infinity.&rdquo;
         </motion.p>
 
-        {/* Details line */}
+        {/* Details line with K & N */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.1, delay: 0.4 }}
-          className="mt-6 flex items-center space-x-4 text-xs uppercase tracking-[0.22em] text-rosegold-300/80"
+          className="mt-6 flex items-center space-x-4 text-xs uppercase tracking-[0.25em] text-rosegold-300/90"
         >
-          <span>Kausik</span>
+          <span>K</span>
           <span className="w-1.5 h-1.5 rotate-45 bg-crimson-600" />
-          <span>Parveen</span>
+          <span>Six Years</span>
           <span className="w-1.5 h-1.5 rotate-45 bg-crimson-600" />
-          <span>KAUSEEN</span>
+          <span>N</span>
         </motion.div>
       </div>
     </section>
