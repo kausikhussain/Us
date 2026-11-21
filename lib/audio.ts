@@ -101,6 +101,20 @@ class SoundEngine {
     this.stopSynth();
   }
 
+  public getCurrentTime(): number {
+    return this.audioElement ? this.audioElement.currentTime : 0;
+  }
+
+  public getDuration(): number {
+    return this.audioElement ? (this.audioElement.duration || 0) : 0;
+  }
+
+  public seek(seconds: number) {
+    if (this.audioElement && !isNaN(seconds)) {
+      this.audioElement.currentTime = Math.max(0, seconds);
+    }
+  }
+
   public setVolume(vol: number) {
     this.volume = Math.max(0, Math.min(1, vol));
     if (this.gainNode && this.audioCtx) {

@@ -16,19 +16,19 @@ export const SONGS_DATA: SongTrack[] = [
   {
     id: "alfaaz",
     title: "Alfaaz",
-    artist: "Our Anniversary Soundtrack",
-    coverImage: "/images/our-story/portraits/IMG_20231018_221857.jpg",
-    durationFormatted: "3:42",
-    description: "The melody that speaks the words our hearts have known for six years.",
-    audioPath: "/audio/alfaaz.mp3",
+    artist: "K & N Soundtrack",
+    coverImage: "/images/our-story/together/IMG-20210516-WA0011.jpg",
+    durationFormatted: "3:05",
+    description: "Unki tareef me kahe kya alfaaz hi nahi hai — our soul-stirring melody.",
+    audioPath: "/audio/alfaaz.m4a",
   },
   {
     id: "dilruba-dilnasee",
     title: "Dilruba Dilnasee",
-    artist: "Our Anniversary Soundtrack",
-    coverImage: "/images/our-story/portraits/IMG_20240205_105528.jpg",
-    durationFormatted: "4:15",
-    description: "A timeless ode celebrating the beauty and grace of devotion.",
+    artist: "K & N Soundtrack",
+    coverImage: "/images/our-story/portraits/IMG_0724.JPG",
+    durationFormatted: "2:53",
+    description: "Qabil-e-tareef tu, apsara jaisi hubahu — a timeless ode celebrating her grace.",
     audioPath: "/audio/dilruba-dilnasee.mp3",
   }
 ];

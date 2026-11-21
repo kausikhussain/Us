@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import { getCounterState, computeCalendarDifference, START_DATE_ISO, ANNIVERSARY_DATE_ISO } from '../lib/time';
 import { SITE_CONFIG } from '../content/site';
 import { TIMELINE_DATA } from '../content/timeline';
@@ -26,6 +28,13 @@ if (LETTERS_DATA.length < 2) {
 if (SONGS_DATA.length !== 2) {
   throw new Error(`Expected 2 songs (Alfaaz & Dilruba Dilnasee), got ${SONGS_DATA.length}`);
 }
+for (const song of SONGS_DATA) {
+  const filePath = path.join(process.cwd(), 'public', song.audioPath.replace(/^\//, ''));
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Audio file for song ${song.title} not found at ${filePath}`);
+  }
+}
+console.log('✓ Both actual audio files verified on disk (Alfaaz & Dilruba Dilnasee).');
 if (GALLERY_COMPOSITIONS.length !== 6) {
   throw new Error(`Expected 6 gallery compositions, got ${GALLERY_COMPOSITIONS.length}`);
 }

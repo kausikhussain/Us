@@ -22,7 +22,8 @@ export const AudioPlayer: React.FC = () => {
   } = useAppStore();
 
   const [expanded, setExpanded] = useState(false);
-  const [progress, setProgress] = useState(25);
+  const [progress, setProgress] = useState(0);
+  const [currentTimeFormatted, setCurrentTimeFormatted] = useState('00:00');
   const [bars, setBars] = useState<number[]>([40, 65, 85, 50, 70, 95, 60, 45]);
 
   // Handle play/pause with soundEngine
@@ -60,7 +61,19 @@ export const AudioPlayer: React.FC = () => {
     setVolume(val);
   };
 
-  // Simulate audio reactive bars when playing
+  // Handle Seek
+  const handleSeek = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const ratio = Math.max(0, Math.min(1, clickX / rect.width));
+    const dur = soundEngine.getDuration();
+    if (dur > 0) {
+      soundEngine.seek(ratio * dur);
+      setProgress(ratio * 100);
+    }
+  };
+
+  // Real audio tracking and simulated visualizer bars
   useEffect(() => {
     let interval: NodeJS.Timeout;
     if (isPlaying && !isMuted) {
@@ -75,7 +88,17 @@ export const AudioPlayer: React.FC = () => {
           Math.max(35, (freq[11] || 75) % 100),
         ];
         setBars(newBars);
-        setProgress((prev) => (prev >= 100 ? 0 : prev + 0.3));
+
+        const cur = soundEngine.getCurrentTime();
+        const dur = soundEngine.getDuration();
+        if (dur > 0) {
+          setProgress((cur / dur) * 100);
+          const mins = Math.floor(cur / 60);
+          const secs = Math.floor(cur % 60);
+          setCurrentTimeFormatted(`${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`);
+        } else {
+          setProgress((prev) => (prev >= 100 ? 0 : prev + 0.3));
+        }
       }, 150);
     } else {
       setBars([20, 20, 20, 20, 20, 20]);
@@ -164,12 +187,16 @@ export const AudioPlayer: React.FC = () => {
                 &ldquo;{currentTrack.description}&rdquo;
               </p>
 
-              {/* Progress Bar */}
+              {/* Progress Bar with Seek Capability */}
               <div className="flex items-center space-x-2 text-[10px] text-rosegold-300 font-mono">
-                <span>01:15</span>
-                <div className="flex-1 h-1 bg-rosegold-400/20 rounded-full overflow-hidden">
+                <span>{currentTimeFormatted}</span>
+                <div
+                  onClick={handleSeek}
+                  className="flex-1 h-2 bg-rosegold-400/20 rounded-full overflow-hidden cursor-pointer flex items-center"
+                  title="Seek position"
+                >
                   <div
-                    className="h-full bg-gradient-to-r from-rosegold-400 to-crimson-600"
+                    className="h-1 bg-gradient-to-r from-rosegold-400 to-crimson-600 rounded-full transition-all duration-100"
                     style={{ width: `${progress}%` }}
                   />
                 </div>
