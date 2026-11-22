@@ -1,19 +1,25 @@
 /**
  * Audio Engine for K & N
- * Handles audio playback, session persistence, smooth crossfading,
- * and a procedural harmonic ambient romantic synthesizer fallback.
+ * Provides robust HTML5 audio playback for our two authentic tracks:
+ * 1. "Alfaaz"
+ * 2. "Dilruba Dilnasee"
+ *
+ * Includes Web Audio analyser support for real-time visualizer frequencies,
+ * session volume persistence, seek, and error-resilient playback without
+ * synthetic sound fallbacks.
  */
 
 class SoundEngine {
+  private audioElement: HTMLAudioElement | null = null;
   private audioCtx: AudioContext | null = null;
   private analyser: AnalyserNode | null = null;
-  private currentSource: AudioBufferSourceNode | null = null;
+  private sourceNode: MediaElementAudioSourceNode | null = null;
   private gainNode: GainNode | null = null;
-  private synthInterval: NodeJS.Timeout | null = null;
-  private isSynthesizing = false;
+  private currentAudioPath: string | null = null;
+  private currentTrackId: string | null = null;
   private isMuted = false;
   private volume = 0.75;
-  private audioElement: HTMLAudioElement | null = null;
+  private hasInitializedSource = false;
 
   constructor() {
     if (typeof window !== 'undefined') {
@@ -25,62 +31,113 @@ class SoundEngine {
       if (savedVol !== null) {
         this.volume = parseFloat(savedVol);
       }
+      this.initAudioElement();
     }
   }
 
-  private initContext() {
-    if (!this.audioCtx && typeof window !== 'undefined') {
-      const AudioCtxClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
-      this.audioCtx = new AudioCtxClass();
-      this.analyser = this.audioCtx.createAnalyser();
-      this.analyser.fftSize = 64;
-      this.gainNode = this.audioCtx.createGain();
-      this.gainNode.gain.setValueAtTime(this.isMuted ? 0 : this.volume, this.audioCtx.currentTime);
-      this.gainNode.connect(this.audioCtx.destination);
+  private initAudioElement() {
+    if (typeof window === 'undefined') return;
+    if (!this.audioElement) {
+      this.audioElement = new Audio();
+      this.audioElement.preload = 'auto';
+      this.audioElement.crossOrigin = 'anonymous';
+      this.audioElement.volume = this.isMuted ? 0 : this.volume;
     }
-    if (this.audioCtx && this.audioCtx.state === 'suspended') {
-      this.audioCtx.resume();
+  }
+
+  private initWebAudio() {
+    if (typeof window === 'undefined' || !this.audioElement) return;
+
+    try {
+      if (!this.audioCtx) {
+        const AudioCtxClass =
+          window.AudioContext ||
+          (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+        if (AudioCtxClass) {
+          this.audioCtx = new AudioCtxClass();
+          this.analyser = this.audioCtx.createAnalyser();
+          this.analyser.fftSize = 64;
+          this.gainNode = this.audioCtx.createGain();
+          this.gainNode.gain.setValueAtTime(
+            this.isMuted ? 0 : this.volume,
+            this.audioCtx.currentTime
+          );
+        }
+      }
+
+      if (this.audioCtx && this.analyser && this.gainNode && !this.hasInitializedSource) {
+        try {
+          this.sourceNode = this.audioCtx.createMediaElementSource(this.audioElement);
+          this.sourceNode.connect(this.analyser);
+          this.analyser.connect(this.gainNode);
+          this.gainNode.connect(this.audioCtx.destination);
+          this.hasInitializedSource = true;
+        } catch {
+          // If already connected or not permitted, direct native playback continues
+        }
+      }
+
+      if (this.audioCtx && this.audioCtx.state === 'suspended') {
+        this.audioCtx.resume().catch(() => {});
+      }
+    } catch {
+      // Ignore Web Audio initialization errors — direct HTML5 audio playback always works
     }
   }
 
   public getFrequencyData(): Uint8Array {
-    if (!this.analyser) {
-      return new Uint8Array(32).fill(12);
+    if (this.analyser) {
+      const data = new Uint8Array(this.analyser.frequencyBinCount);
+      this.analyser.getByteFrequencyData(data);
+      return data;
     }
-    const data = new Uint8Array(this.analyser.frequencyBinCount);
-    this.analyser.getByteFrequencyData(data);
-    return data;
+    // Subtle rhythmic fallback for visualizer bars when Web Audio graph isn't active
+    return new Uint8Array(32).map((_, i) => Math.floor(40 + Math.sin(Date.now() / 200 + i) * 30));
   }
 
-  public async playTrack(audioPath: string, trackId: string, onEnded?: () => void) {
-    this.initContext();
-    this.stop();
+  public async playTrack(
+    audioPath: string,
+    trackId: string,
+    onEnded?: () => void
+  ): Promise<boolean> {
+    this.initAudioElement();
+    if (!this.audioElement) return false;
 
-    // First attempt to load real audio element
+    this.initWebAudio();
+
+    // Setup track completion callback
+    this.audioElement.onended = () => {
+      if (onEnded) onEnded();
+    };
+
+    // If already playing this exact track, keep playing
+    if (this.currentAudioPath === audioPath && !this.audioElement.paused) {
+      return true;
+    }
+
     try {
-      this.audioElement = new Audio(audioPath);
-      this.audioElement.volume = this.isMuted ? 0 : this.volume;
-      this.audioElement.onended = () => {
-        if (onEnded) onEnded();
-      };
+      if (this.currentAudioPath !== audioPath) {
+        this.currentAudioPath = audioPath;
+        this.currentTrackId = trackId;
+        this.audioElement.src = audioPath;
+        this.audioElement.currentTime = 0;
+        this.audioElement.load();
+      }
 
-      // Connect to Web Audio Analyser if supported
-      if (this.audioCtx && this.analyser) {
-        try {
-          const source = this.audioCtx.createMediaElementSource(this.audioElement);
-          source.connect(this.analyser);
-          this.analyser.connect(this.audioCtx.destination);
-        } catch {
-          // Fallback if already connected or CORS
-        }
+      this.audioElement.volume = this.isMuted ? 0 : this.volume;
+
+      if (this.audioCtx && this.audioCtx.state === 'suspended') {
+        await this.audioCtx.resume().catch(() => {});
       }
 
       await this.audioElement.play();
-      this.isSynthesizing = false;
       return true;
-    } catch {
-      // If the file doesn't exist or playback was prevented, engage the romantic harmonic synthesizer!
-      this.startHarmonicSynth(trackId);
+    } catch (err: unknown) {
+      const error = err as Error;
+      // AbortError happens when a newer play request interrupts an in-flight one; benign
+      if (error?.name !== 'AbortError') {
+        console.warn(`Audio playback for ${trackId} (${audioPath}) encountered:`, error);
+      }
       return false;
     }
   }
@@ -89,16 +146,15 @@ class SoundEngine {
     if (this.audioElement) {
       this.audioElement.pause();
     }
-    this.stopSynth();
   }
 
   public stop() {
     if (this.audioElement) {
       this.audioElement.pause();
       this.audioElement.currentTime = 0;
-      this.audioElement = null;
     }
-    this.stopSynth();
+    this.currentAudioPath = null;
+    this.currentTrackId = null;
   }
 
   public getCurrentTime(): number {
@@ -106,7 +162,9 @@ class SoundEngine {
   }
 
   public getDuration(): number {
-    return this.audioElement ? (this.audioElement.duration || 0) : 0;
+    return this.audioElement && !isNaN(this.audioElement.duration)
+      ? this.audioElement.duration
+      : 0;
   }
 
   public seek(seconds: number) {
@@ -117,11 +175,17 @@ class SoundEngine {
 
   public setVolume(vol: number) {
     this.volume = Math.max(0, Math.min(1, vol));
-    if (this.gainNode && this.audioCtx) {
-      this.gainNode.gain.setValueAtTime(this.isMuted ? 0 : this.volume, this.audioCtx.currentTime);
-    }
+    const effectiveVol = this.isMuted ? 0 : this.volume;
+
     if (this.audioElement) {
-      this.audioElement.volume = this.isMuted ? 0 : this.volume;
+      this.audioElement.volume = effectiveVol;
+    }
+    if (this.gainNode && this.audioCtx) {
+      try {
+        this.gainNode.gain.setValueAtTime(effectiveVol, this.audioCtx.currentTime);
+      } catch {
+        // GainNode catch
+      }
     }
     if (typeof window !== 'undefined') {
       sessionStorage.setItem('kn_audio_vol', this.volume.toString());
@@ -145,76 +209,9 @@ class SoundEngine {
     return this.volume;
   }
 
-  /**
-   * Procedural lush romantic soundtrack synthesizer
-   * Generates warm, soulful chord progressions (F# minor, D major, A major, C# minor)
-   * emulating cinematic strings and piano arpeggios.
-   */
-  private startHarmonicSynth(trackId: string) {
-    if (this.isSynthesizing || !this.audioCtx || !this.gainNode || !this.analyser) return;
-    this.isSynthesizing = true;
-
-    // Frequencies for "Alfaaz" (gentle, warm F#m/D/A progression)
-    // Frequencies for "Dilruba Dilnasee" (romantic lyricism, Bm/G/D/F#)
-    const chords = trackId === 'alfaaz' ? [
-      [185.00, 220.00, 277.18, 370.00], // F#m9
-      [146.83, 220.00, 293.66, 369.99], // Dmaj7
-      [220.00, 277.18, 329.63, 440.00], // Amaj9
-      [138.59, 207.65, 277.18, 329.63], // C#m7
-    ] : [
-      [246.94, 293.66, 369.99, 440.00], // Bm7
-      [196.00, 246.94, 293.66, 392.00], // Gmaj7
-      [146.83, 220.00, 293.66, 369.99], // Dmaj7
-      [185.00, 233.08, 277.18, 369.99], // F#7
-    ];
-
-    let step = 0;
-    const playChord = () => {
-      if (!this.isSynthesizing || !this.audioCtx || !this.gainNode || !this.analyser) return;
-      const currentChord = chords[step % chords.length];
-      step++;
-
-      currentChord.forEach((freq, idx) => {
-        if (!this.audioCtx || !this.gainNode || !this.analyser) return;
-        const osc = this.audioCtx.createOscillator();
-        const noteGain = this.audioCtx.createGain();
-        const filter = this.audioCtx.createBiquadFilter();
-
-        osc.type = idx === 0 ? 'triangle' : 'sine';
-        osc.frequency.setValueAtTime(freq, this.audioCtx.currentTime);
-
-        filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(450 + idx * 250, this.audioCtx.currentTime);
-
-        const now = this.audioCtx.currentTime;
-        const attack = 0.8 + idx * 0.15;
-        const decay = 3.2;
-
-        noteGain.gain.setValueAtTime(0, now);
-        noteGain.gain.linearRampToValueAtTime(0.06 / (idx + 1), now + attack);
-        noteGain.gain.exponentialRampToValueAtTime(0.0001, now + attack + decay);
-
-        osc.connect(filter);
-        filter.connect(noteGain);
-        noteGain.connect(this.analyser);
-        noteGain.connect(this.gainNode);
-
-        osc.start(now);
-        osc.stop(now + attack + decay);
-      });
-    };
-
-    playChord();
-    this.synthInterval = setInterval(playChord, 3800);
-  }
-
-  private stopSynth() {
-    this.isSynthesizing = false;
-    if (this.synthInterval) {
-      clearInterval(this.synthInterval);
-      this.synthInterval = null;
-    }
+  public getCurrentTrackId(): string | null {
+    return this.currentTrackId;
   }
 }
 
-export const soundEngine = typeof window !== 'undefined' ? new SoundEngine() : ({} as SoundEngine);
+export const soundEngine = new SoundEngine();

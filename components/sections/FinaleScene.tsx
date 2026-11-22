@@ -4,11 +4,19 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { BrandWordmark } from '@/components/ui/BrandWordmark';
 import { Monogram } from '@/components/ui/Monogram';
-import { RotateCcw, Shield } from 'lucide-react';
+import { RotateCcw, Shield, Lock } from 'lucide-react';
 
 export const FinaleScene: React.FC = () => {
   const replayStory = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleLock = async () => {
+    try {
+      await fetch('/api/auth/lock', { method: 'POST' });
+    } catch {}
+    window.dispatchEvent(new CustomEvent('kn:lock'));
+    window.location.reload();
   };
 
   return (
@@ -84,13 +92,13 @@ export const FinaleScene: React.FC = () => {
           Six Years. One Story. A Thousand Feelings. A Lifetime of Memories Yet to Come.
         </motion.p>
 
-        {/* Replay Story Action Button */}
+        {/* Replay Story & Lock Actions */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.9, delay: 0.8 }}
-          className="mt-10"
+          className="mt-10 flex flex-wrap items-center justify-center gap-4"
         >
           <button
             onClick={replayStory}
@@ -99,6 +107,15 @@ export const FinaleScene: React.FC = () => {
           >
             <RotateCcw size={15} />
             <span>Replay Our Story</span>
+          </button>
+
+          <button
+            onClick={handleLock}
+            className="px-8 py-3.5 rounded-full bg-wine-950/50 hover:bg-burgundy-900/60 border border-rosegold-400/30 hover:border-rosegold-400/60 text-ivory-50/80 hover:text-rosegold-200 text-xs uppercase tracking-[0.25em] flex items-center space-x-3 transition-all shadow-luxury hover:scale-105 active:scale-95"
+            title="Lock this experience"
+          >
+            <Lock size={15} />
+            <span>Lock Story</span>
           </button>
         </motion.div>
       </div>

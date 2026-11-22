@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppStore } from '@/lib/store';
 import { soundEngine } from '@/lib/audio';
@@ -25,6 +25,7 @@ export const AudioPlayer: React.FC = () => {
   const [progress, setProgress] = useState(0);
   const [currentTimeFormatted, setCurrentTimeFormatted] = useState('00:00');
   const [bars, setBars] = useState<number[]>([40, 65, 85, 50, 70, 95, 60, 45]);
+  const prevTrackIndexRef = useRef(currentTrackIndex);
 
   // Handle play/pause with soundEngine
   const handleTogglePlay = async () => {
@@ -39,14 +40,17 @@ export const AudioPlayer: React.FC = () => {
     }
   };
 
-  // Re-trigger soundEngine when current track changes
+  // Re-trigger soundEngine ONLY when track index changes and audio is currently playing
   useEffect(() => {
-    if (isPlaying) {
-      soundEngine.playTrack(currentTrack.audioPath, currentTrack.id, () => {
-        nextTrack();
-      });
+    if (prevTrackIndexRef.current !== currentTrackIndex) {
+      prevTrackIndexRef.current = currentTrackIndex;
+      if (isPlaying) {
+        soundEngine.playTrack(currentTrack.audioPath, currentTrack.id, () => {
+          nextTrack();
+        });
+      }
     }
-  }, [currentTrack, isPlaying, nextTrack]);
+  }, [currentTrackIndex, currentTrack, isPlaying, nextTrack]);
 
   // Handle Mute
   const handleToggleMute = () => {

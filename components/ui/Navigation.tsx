@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Monogram } from './Monogram';
 import { useAppStore } from '@/lib/store';
-import { Menu, X, Volume2, VolumeX } from 'lucide-react';
+import { Menu, X, Volume2, VolumeX, Lock } from 'lucide-react';
 
 const NAV_LINKS = [
   { label: 'Overture', href: '#hero' },
@@ -40,6 +40,14 @@ export const Navigation: React.FC = () => {
     if (target) {
       target.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const handleLock = async () => {
+    try {
+      await fetch('/api/auth/lock', { method: 'POST' });
+    } catch {}
+    window.dispatchEvent(new CustomEvent('kn:lock'));
+    window.location.reload();
   };
 
   return (
@@ -100,6 +108,16 @@ export const Navigation: React.FC = () => {
               title={isMuted ? "Unmute" : "Mute"}
             >
               {isMuted ? <VolumeX size={15} /> : <Volume2 size={15} />}
+            </button>
+
+            {/* Lock Story Option */}
+            <button
+              onClick={handleLock}
+              className="p-2 rounded-full border border-rosegold-400/30 text-ivory-50/90 hover:text-rosegold-300 hover:border-rosegold-400/60 transition-all"
+              aria-label="Lock Story"
+              title="Lock Story"
+            >
+              <Lock size={15} />
             </button>
 
             {/* Mobile Menu Trigger */}

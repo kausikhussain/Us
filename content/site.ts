@@ -32,6 +32,6 @@ export const SITE_CONFIG: SiteConfig = {
   anniversaryDate: "2026-11-23T00:00:00+05:30",
   timezone: "Asia/Kolkata",
   accessPasscode: "23112020",
-  enablePasscodeGate: false,
+  enablePasscodeGate: true,
   songs: ["Alfaaz", "Dilruba Dilnasee"],
 };
