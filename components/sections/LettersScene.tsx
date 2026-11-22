@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { LETTERS_DATA, LoveLetter } from '@/content/letters';
+import { LETTERS_DATA } from '@/content/letters';
 import { useAppStore } from '@/lib/store';
 import { Monogram } from '@/components/ui/Monogram';
 import { Printer, Mail, FastForward } from 'lucide-react';
@@ -44,23 +44,23 @@ export const LettersScene: React.FC = () => {
   return (
     <section
       id="letters"
-      className="relative min-h-screen py-24 sm:py-36 px-6 sm:px-12 select-none overflow-hidden"
+      className="relative min-h-screen py-24 sm:py-36 px-6 sm:px-12 select-none overflow-hidden bg-gradient-to-b from-wine-950 via-burgundy-950/90 to-wine-950"
     >
       <div className="max-w-4xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="text-xs uppercase tracking-[0.3em] text-rosegold-300 mb-3 block">
-            Scene VI · Words in Ink
+            Scene X · The Letters
           </span>
-          <h2 className="font-serif text-3xl sm:text-5xl text-ivory-50 tracking-[0.05em]">
+          <h2 className="font-serif text-3xl sm:text-5xl text-ivory-50 tracking-[0.05em] font-light">
             Words I Could Never Fit Into a Moment
           </h2>
           <p className="font-sans text-xs sm:text-sm text-ivory-50/70 uppercase tracking-[0.2em] mt-3">
-            Two Hand-Penned Letters for Six Years & Eternity
+            Three Hand-Penned Letters for Six Years & Eternity
           </p>
 
           {/* Letter Switcher Tabs */}
-          <div className="flex items-center justify-center space-x-4 mt-8">
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-8">
             {LETTERS_DATA.map((letter) => {
               const isActive = letter.id === activeLetterId;
               return (
@@ -70,13 +70,13 @@ export const LettersScene: React.FC = () => {
                     setActiveLetterId(letter.id);
                     setRevealedParagraphs(1);
                   }}
-                  className={`px-6 py-2.5 rounded-full text-xs uppercase tracking-[0.2em] border transition-all ${
+                  className={`px-5 py-2.5 rounded-full text-xs uppercase tracking-[0.2em] border transition-all ${
                     isActive
                       ? 'bg-crimson-600/30 border-rosegold-400 text-ivory-50 shadow-crimson-glow'
                       : 'border-rosegold-400/20 text-ivory-50/60 hover:text-ivory-50 hover:border-rosegold-400/50'
                   }`}
                 >
-                  {letter.letterNumber} — {letter.title}
+                  {letter.letterNumber} — {letter.id === 'letter-03' ? 'Open When You Miss Me' : letter.title.split('.')[0]}
                 </button>
               );
             })}
@@ -87,34 +87,46 @@ export const LettersScene: React.FC = () => {
         <div className="relative flex flex-col items-center">
           <AnimatePresence mode="wait">
             {!isEnvelopeOpen ? (
-              /* CLOSED ENVELOPE WITH WAX SEAL */
+              /* CLOSED ENVELOPE (Layered with slight -2deg tilt) */
               <motion.div
-                key="closed-envelope"
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                exit={{ opacity: 0, scale: 0.92 }}
+                key={`closed-${activeLetter.id}`}
+                initial={{ opacity: 0, scale: 0.95, rotate: -2 }}
+                animate={{ opacity: 1, scale: 1, rotate: -2 }}
+                exit={{ opacity: 0, scale: 0.92, rotate: 0 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="relative w-full max-w-xl h-[340px] sm:h-[380px] bg-gradient-to-b from-[#F2D3DA] to-[#E8BBC7] rounded-3xl border border-rosegold-400/40 shadow-luxury-lg flex flex-col items-center justify-center p-8 text-center cursor-pointer group"
+                className="relative w-full max-w-xl h-[340px] sm:h-[380px] bg-gradient-to-b from-[#F2D3DA] to-[#E8BBC7] rounded-3xl border border-rosegold-400/40 shadow-luxury flex flex-col items-center justify-center p-8 text-center cursor-pointer group"
                 onClick={handleOpenEnvelope}
                 data-cursor="read"
               >
                 {/* Envelope Flap Lines */}
                 <div className="absolute top-0 inset-x-0 h-32 border-b border-rosegold-400/30 pointer-events-none" />
 
-                {/* Wax Seal with Monogram K & N */}
-                <motion.div
-                  whileHover={{ scale: 1.08 }}
-                  transition={{ duration: 0.3 }}
-                  className="relative w-24 h-24 rounded-full bg-gradient-to-br from-crimson-600 to-burgundy-900 border-2 border-rosegold-400/60 shadow-crimson-glow flex items-center justify-center cursor-pointer mb-6"
-                >
-                  <Monogram size={56} />
-                </motion.div>
+                {/* Wax Seal vs Silk Ribbon Knot */}
+                {activeLetter.sealType === 'ribbon' ? (
+                  /* Letter 03 Soft Silk Ribbon Bow */
+                  <motion.div
+                    whileHover={{ scale: 1.08 }}
+                    transition={{ duration: 0.3 }}
+                    className="relative px-6 py-2 rounded-full bg-gradient-to-r from-rosegold-400 to-crimson-600 text-ivory-50 font-script text-2xl shadow-luxury border border-rosegold-300/80 mb-6 flex items-center space-x-2"
+                  >
+                    <span>Bound with Ribbon</span>
+                  </motion.div>
+                ) : (
+                  /* Letters 01 & 02 Burgundy Wax Seal with K & N Monogram */
+                  <motion.div
+                    whileHover={{ scale: 1.08 }}
+                    transition={{ duration: 0.3 }}
+                    className="relative w-24 h-24 rounded-full bg-gradient-to-br from-crimson-600 to-burgundy-900 border-2 border-rosegold-400/60 shadow-crimson-glow flex items-center justify-center cursor-pointer mb-6"
+                  >
+                    <Monogram size={56} />
+                  </motion.div>
+                )}
 
-                <h3 className="font-serif text-2xl sm:text-3xl text-wine-950 font-normal tracking-[0.05em]">
+                <h3 className="font-serif text-2xl sm:text-3xl text-wine-950 font-normal tracking-[0.05em] px-4">
                   {activeLetter.title}
                 </h3>
                 <span className="text-[11px] uppercase tracking-[0.25em] text-burgundy-900/80 mt-1">
-                  Sealed for 23 November 2026
+                  {activeLetter.subtitle}
                 </span>
 
                 <button
@@ -131,13 +143,18 @@ export const LettersScene: React.FC = () => {
             ) : (
               /* OPENED LETTER ON FINE COTTON STATIONERY */
               <motion.div
-                key="opened-letter"
+                key={`opened-${activeLetter.id}`}
                 initial={{ opacity: 0, y: 35 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -25 }}
                 transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                className="w-full bg-[#FFFBF8] text-wine-950 rounded-3xl p-8 sm:p-14 shadow-luxury-lg border border-rosegold-400/30 relative print:p-0 print:border-none print:shadow-none"
+                className="w-full bg-[#FFFBF7] text-[#4A1525] rounded-3xl p-8 sm:p-14 shadow-luxury border-2 border-dashed border-rosegold-400/30 relative print:p-0 print:border-none print:shadow-none"
               >
+                {/* Watermark in background */}
+                <div className="absolute inset-0 m-auto w-64 h-64 opacity-5 pointer-events-none flex items-center justify-center">
+                  <Monogram size={200} />
+                </div>
+
                 {/* Stationary Header */}
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between border-b border-rosegold-400/20 pb-6 mb-8 print:border-b-2">
                   <div className="flex items-center space-x-3 mb-4 sm:mb-0">
@@ -147,7 +164,7 @@ export const LettersScene: React.FC = () => {
                         K & N
                       </span>
                       <span className="text-[10px] uppercase tracking-[0.2em] text-neutral-500">
-                        Private Keepsake
+                        Private Keepsake · To Nasreen From Kausik
                       </span>
                     </div>
                   </div>
@@ -173,9 +190,9 @@ export const LettersScene: React.FC = () => {
                 </div>
 
                 {/* Letter Body */}
-                <div className="space-y-6 max-w-2xl mx-auto font-serif">
+                <div className="space-y-6 max-w-2xl mx-auto font-serif relative z-10">
                   <div className="flex justify-between items-baseline mb-6">
-                    <p className="text-xl sm:text-2xl italic text-burgundy-900 font-light">
+                    <p className="font-script text-3xl sm:text-4xl text-crimson-600 font-normal">
                       {activeLetter.salutation}
                     </p>
                     <span className="text-xs uppercase tracking-[0.2em] text-neutral-500 font-sans">
@@ -185,15 +202,22 @@ export const LettersScene: React.FC = () => {
 
                   {/* Paragraphs with Controlled Reading Pace Reveal */}
                   {activeLetter.paragraphs
-                    .slice(0, letterRevealMode === 'instant' ? activeLetter.paragraphs.length : revealedParagraphs)
+                    .slice(
+                      0,
+                      letterRevealMode === 'instant'
+                        ? activeLetter.paragraphs.length
+                        : revealedParagraphs
+                    )
                     .map((paragraph, index) => (
                       <motion.p
                         key={index}
                         initial={{ opacity: 0, y: 15 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
-                        className={`text-base sm:text-lg leading-relaxed text-neutral-800 ${
-                          index === 0 ? 'first-letter:text-4xl first-letter:font-serif first-letter:text-crimson-600 first-letter:float-left first-letter:mr-2.5 first-letter:leading-none' : ''
+                        className={`text-base sm:text-lg leading-[1.8] text-neutral-800 ${
+                          index === 0
+                            ? 'first-letter:text-5xl first-letter:font-serif first-letter:text-crimson-600 first-letter:float-left first-letter:mr-3 first-letter:leading-none first-letter:font-bold'
+                            : ''
                         }`}
                       >
                         {paragraph}
@@ -225,7 +249,7 @@ export const LettersScene: React.FC = () => {
                       <p className="italic text-base text-neutral-700">
                         {activeLetter.closing}
                       </p>
-                      <p className="font-script text-3xl sm:text-4xl text-crimson-600 mt-2">
+                      <p className="font-script text-4xl sm:text-5xl text-crimson-600 mt-2">
                         {activeLetter.signatureName}
                       </p>
                       {activeLetter.postscript && (

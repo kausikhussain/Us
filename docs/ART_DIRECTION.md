@@ -1,4 +1,4 @@
-# KAUSEEN — ART DIRECTION BIBLE
+# K & N — ART DIRECTION BIBLE
 *A Private Cinematic Love Story in the Browser*
 *Six Years · 23 November 2020 → 23 November 2026*
 
@@ -6,7 +6,7 @@
 
 ## 1. EXECUTIVE VISION & BRAND ESSENCE
 
-**KAUSEEN** is not a generic anniversary card or casual photo gallery. It is an interactive digital romantic film crafted with the restraint and nuance of a luxury fashion house (e.g. Celine, Chanel, The Row), the visual poetry of Wong Kar-wai’s *In the Mood for Love*, and the seamless engineering polish of an Apple keynote reveal.
+**K & N** is not a generic anniversary card or casual photo gallery. It is an interactive digital romantic film crafted with the restraint and nuance of a luxury fashion house (e.g. Celine, Chanel, The Row), the visual poetry of Wong Kar-wai’s *In the Mood for Love*, and the seamless engineering polish of an Apple keynote reveal.
 
 ### Emotional Arc (The 9-Scene Journey)
 1. **Overture (Hero)** — *Anticipation & Wonder*
@@ -72,13 +72,13 @@ The chromatic palette is built upon warm natural light transitioning gracefully 
 
 ---
 
-## 4. BRAND IDENTITY: THE "KAUSEEN" MONOGRAM & WORDMARK
+## 4. BRAND IDENTITY: THE "K & N" MONOGRAM & WORDMARK
 
 ### Wordmark Construction
 - **Typography**: Custom-kerned serif letterforms with hand-tuned kerning pairs: `K · A · U · S · E · E · N`.
 - **Ligature**: Subtle arching connection between the two `E`s or between `S` and `E`.
 - **Hairline Accent**: Ultra-thin rose-gold rule (`0.75px`) expanding beneath the wordmark on initial reveal.
-- **Iconic Monogram**: `K · S` interlocking monogram inside a delicate rose-gold ring, used as the site loader, wax seal stamp, and favicon.
+- **Iconic Monogram**: `K & N` interlocking monogram inside a delicate rose-gold ring, used as the site loader, wax seal stamp, and favicon.
 
 ---
 

@@ -6,13 +6,13 @@ import { BrandWordmark } from '@/components/ui/BrandWordmark';
 import { ArrowDown, Sparkles } from 'lucide-react';
 
 export const HeroScene: React.FC = () => {
-  const scrollToInfinity = () => {
-    const el = document.getElementById('infinity');
+  const scrollToMessage = () => {
+    const el = document.getElementById('message-before-journey');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
-  const scrollToTimeline = () => {
-    const el = document.getElementById('timeline');
+  const scrollToCounter = () => {
+    const el = document.getElementById('counter') || document.getElementById('our-six-years');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
@@ -59,14 +59,17 @@ export const HeroScene: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1], delay: 0.9 }}
-          className="mt-3"
+          className="mt-3 flex flex-col items-center"
         >
           <h2 className="font-sans text-xs sm:text-sm uppercase tracking-[0.28em] text-ivory-50/80">
-            Six Years. One Story. A Thousand Feelings.
+            KAUSIK & NASREEN
           </h2>
+          <span className="text-[11px] font-sans uppercase tracking-[0.2em] text-rosegold-300/80 mt-1">
+            Six Years. One Beautiful Story.
+          </span>
         </motion.div>
 
-        {/* Featured Editorial Quote in Hero */}
+        {/* Featured Editorial Subtitle in Hero */}
         <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -74,7 +77,7 @@ export const HeroScene: React.FC = () => {
           className="mt-6 max-w-2xl px-6 py-4 rounded-2xl bg-burgundy-900/30 border border-rosegold-400/20 backdrop-blur-sm"
         >
           <p className="font-serif italic text-base sm:text-lg text-ivory-50/90 font-light leading-relaxed">
-            &ldquo;Six Years. Countless Little Moments. One Person Who Makes Them All Special.&rdquo;
+            &ldquo;Some stories are too special to fit into ordinary words.&rdquo;
           </p>
         </motion.div>
 
@@ -86,7 +89,7 @@ export const HeroScene: React.FC = () => {
           className="flex flex-col sm:flex-row items-center gap-4 mt-8"
         >
           <button
-            onClick={scrollToInfinity}
+            onClick={scrollToMessage}
             className="px-8 py-3.5 rounded-full bg-gradient-to-r from-crimson-600 to-burgundy-900 text-ivory-50 text-xs uppercase tracking-[0.25em] border border-rosegold-400/40 shadow-crimson-glow hover:scale-105 active:scale-95 transition-all group"
             data-cursor="play"
           >
@@ -94,7 +97,7 @@ export const HeroScene: React.FC = () => {
           </button>
 
           <button
-            onClick={scrollToTimeline}
+            onClick={scrollToCounter}
             className="px-6 py-3.5 rounded-full bg-wine-950/60 backdrop-blur-md text-ivory-50/80 text-xs uppercase tracking-[0.22em] border border-rosegold-400/20 hover:text-rosegold-300 hover:border-rosegold-400/50 transition-all"
           >
             Explore Our Story
@@ -108,7 +111,7 @@ export const HeroScene: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2, delay: 1.5 }}
         className="z-10 flex flex-col items-center cursor-pointer group"
-        onClick={scrollToInfinity}
+        onClick={scrollToMessage}
       >
         <span className="text-[10px] uppercase tracking-[0.28em] text-rosegold-300/80 group-hover:text-rosegold-300 transition-colors mb-2">
           Scroll to discover

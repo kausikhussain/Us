@@ -37,7 +37,7 @@ export const SongsScene: React.FC = () => {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-xs uppercase tracking-[0.3em] text-rosegold-300 mb-3 block">
-            Scene VI · Harmonic Devotion
+            Scene VIII · Harmonic Devotion
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl text-ivory-50 tracking-[0.05em]">
             Our Soundtrack

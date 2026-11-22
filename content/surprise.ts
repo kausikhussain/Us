@@ -19,11 +19,11 @@ export const SURPRISE_DATA: SurpriseConfig = {
   title: "A Little Something for You",
   subtitle: "Bound in silk ribbon, kept safe just for this very moment.",
   instruction: "Press & hold the seal to unlock your surprise",
-  unlockedTitle: "To My Entire World,",
-  secretMessage: "In a world full of rushing moments and fleeting noise, you have been my favorite stillness. Thank you for six unforgettable years of joy, laughter, and pure understanding. I would choose you in every lifetime, in every world, across every universe. Happy 6th Anniversary, my love! Forever Yours — K & N.",
+  unlockedTitle: "Dearest Nasreen,",
+  secretMessage: "In a life full of rushing hours and fleeting noise, you have been my favourite peace. Thank you for six unforgettable years of laughter, warmth, and quiet understanding. Walking beside you has been the greatest gift I have ever known. Happy 6th Anniversary, with all my love — Kausik.",
   photo: {
     src: "/images/our-story/portraits/DSC_0111_1.JPG",
-    alt: "A treasured photograph revealed from the sealed gift",
-    caption: "Forever Yours — 23 November 2020 through infinity.",
+    alt: "A treasured portrait of Nasreen revealed from the sealed gift",
+    caption: "Kausik & Nasreen — 23 November 2020 through every tomorrow.",
   },
 };

@@ -1,11 +1,11 @@
-# KAUSEEN — MOTION DESIGN SYSTEM
+# K & N — MOTION DESIGN SYSTEM
 *Motion is breath, not decoration. Slow, weighted, eased.*
 
 ---
 
 ## 1. MOTION PHILOSOPHY
 
-Every movement in **KAUSEEN** serves an emotional purpose:
+Every movement in **K & N** serves an emotional purpose:
 - **Weighted & Liquid**: Movements possess tactile mass and fluid drag, resembling heavy silk falling through warm air.
 - **Never Snapping**: Cheap elastic bounces and robotic linear speeds are banned.
 - **Single Focal Event**: At any given scroll position, only one primary visual event commands attention.

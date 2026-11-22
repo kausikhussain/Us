@@ -1,4 +1,4 @@
-# KAUSEEN — PRIVACY & SECURITY GUIDE
+# K & N — PRIVACY & SECURITY GUIDE
 *Protecting a Private Personal Gift*
 
 ---
@@ -40,5 +40,5 @@ export const SITE_CONFIG = {
 ## 3. HOW TO TAKE THE WEBSITE DOWN OR ARCHIVE IT
 
 - **Vercel / Netlify**: In the project settings, click **Delete Project** or set to **Password Protected** deployment.
-- **Self-Hosted**: Stop the Node process (`pm2 stop kauseen` or remove container).
+- **Self-Hosted**: Stop the Node process (`pm2 stop k-and-n` or remove container).
 - **Offline Archival**: Run `npm run build && npm run export` (or save the repository locally) to preserve a permanent, private offline keepsake on a USB drive.

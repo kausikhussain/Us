@@ -1,4 +1,4 @@
-# KAUSEEN — SCENE-BY-SCENE STORYBOARD
+# K & N — SCENE-BY-SCENE STORYBOARD
 *A Continuous Nine-Scene Romantic Film in the Browser*
 
 ---
@@ -23,7 +23,7 @@
 ## SCENE 2: THE RIBBON BECOMES INFINITY
 - **Visual Composition**: The visual metaphor of two separate lives converging. Two distinct ribbons (one warm rose, one champagne gold) emerge from opposite screen boundaries.
 - **Scroll Behavior**: Scrubbed pinned timeline. As the user scrolls through the 150vh pinning zone, the two ribbons weave around each other, converge at the center, and lock into an infinity knot (`∞` lemniscate).
-- **Center Reveal**: As the infinity knot completes, the KAUSEEN monogram (`K · S`) glows with a soft golden halo at the nexus.
+- **Center Reveal**: As the infinity knot completes, the K & N monogram (`K & N`) glows with a soft golden halo at the nexus.
 - **Color State**: Shifts from `#F8E6EA` to `#E8BBC7` (dusty rose atmosphere).
 - **Mobile Variant**: Vertical intertwine that gracefully fills portrait viewport without horizontal clipping.
 
@@ -62,7 +62,7 @@
 
 ## SCENE 5: WORDS I COULD NEVER FIT INTO A MOMENT (LOVE LETTERS)
 - **Visual Composition**: A luxury textured blush paper envelope seated in a softly lit burgundy alcove.
-- **Interactive Wax Seal**: A deep crimson wax seal embossed with the `K · S` monogram.
+- **Interactive Wax Seal**: A deep crimson wax seal embossed with the `K & N` monogram.
 - **Interaction**:
   - Clicking `"Open Your Letter"` initiates a 3D envelope opening animation:
     1. Wax seal splits with fine hairline fractures.
@@ -109,7 +109,7 @@
 ## SCENE 9: THE GRAND REVEAL (THE FINALE)
 - **Atmosphere**: Deepest luxury burgundy and wine (`#561B31` to `#2A0C17`).
 - **Visuals**: Large, slow-drifting silk waves and descending rose petals. Soft warm candlelight and glowing particle stars.
-- **Wordmark Return**: The grand `KAUSEEN` emblem returns in luminous rose gold.
+- **Wordmark Return**: The grand `K & N` emblem returns in luminous rose gold.
 - **The Core Statement**:
   > *"Six Years. Still My Favourite Story. 23 November 2020 — Forever."*
 - **Action**: `"Replay Our Story"` button smoothly transports the visitor back to the top to experience the journey once more.

@@ -54,7 +54,7 @@ export const DevPersonalizationBadge: React.FC = () => {
 
               <div className="mt-4 space-y-4 text-xs font-sans text-ivory-50/80">
                 <p>
-                  To make KAUSEEN 100% personal, update the following files in <code className="text-rosegold-300 bg-burgundy-900/50 px-1.5 py-0.5 rounded">/content/</code>:
+                  To personalize this keepsake, update the following files in <code className="text-rosegold-300 bg-burgundy-900/50 px-1.5 py-0.5 rounded">/content/</code>:
                 </p>
 
                 <div className="space-y-2.5">

@@ -1,0 +1,2580 @@
+[
+  {
+    "id": "ph-001",
+    "filename": "Beige Aesthetic Photo Collage Frame Instagram Story.png",
+    "source": "OurPictures/Beige Aesthetic Photo Collage Frame Instagram Story.png",
+    "publicPath": "/images/our-story/collages/Beige_Aesthetic_Photo_Collage_Frame_Instagram_Story.png",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "both",
+    "description": "Artistic beige frame collage capturing multiple smiling snapshots and memories.",
+    "mood": "tender",
+    "expression": "warm and playful",
+    "composition": "multi-frame polaroid collage",
+    "dominantColors": [
+      "#f8f4ec",
+      "#f7f3eb",
+      "#f5f0ea"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.1,
+      0.8,
+      0.9
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.5
+      ],
+      "tablet": [
+        0.5,
+        0.5
+      ],
+      "desktop": [
+        0.5,
+        0.5
+      ]
+    },
+    "textSafeZones": [
+      "below",
+      "above"
+    ],
+    "duplicateOf": null,
+    "timeline": null,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06",
+      "07"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-002",
+    "filename": "Black Aesthetic Photo Collage Instagram Post.png",
+    "source": "OurPictures/Black Aesthetic Photo Collage Instagram Post.png",
+    "publicPath": "/images/our-story/collages/Black_Aesthetic_Photo_Collage_Instagram_Post.png",
+    "width": 1080,
+    "height": 1350,
+    "aspectRatio": 0.8,
+    "orientation": "portrait",
+    "subject": "both",
+    "description": "Minimalist black-bordered composite grid of personal memories.",
+    "mood": "nostalgic",
+    "expression": "natural and candid",
+    "composition": "editorial multi-photo grid",
+    "dominantColors": [
+      "#1a1a1a",
+      "#191919",
+      "#181818"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.15,
+      0.15,
+      0.85,
+      0.85
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.5
+      ],
+      "tablet": [
+        0.5,
+        0.5
+      ],
+      "desktop": [
+        0.5,
+        0.5
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": null,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-003",
+    "filename": "Brown Moody Romantic Collage Valentines Day Your Story.png",
+    "source": "OurPictures/Brown Moody Romantic Collage Valentines Day Your Story.png",
+    "publicPath": "/images/our-story/collages/Brown_Moody_Romantic_Collage_Valentines_Day_Your_Story.png",
+    "width": 1080,
+    "height": 1920,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "both",
+    "description": "Sepia-toned warm collage with handwritten love notes and quiet memories.",
+    "mood": "contemplative",
+    "expression": "affectionate",
+    "composition": "vintage editorial story layout",
+    "dominantColors": [
+      "#000002",
+      "#010103",
+      "#000000"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.25,
+      0.1,
+      0.75,
+      0.9
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.5
+      ],
+      "tablet": [
+        0.5,
+        0.5
+      ],
+      "desktop": [
+        0.5,
+        0.5
+      ]
+    },
+    "textSafeZones": [
+      "above",
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": null,
+    "category": "Special memories",
+    "candidateSections": [
+      "06",
+      "07"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-004",
+    "filename": "DSC_0111_1.JPG",
+    "source": "OurPictures/DSC_0111_1.JPG",
+    "publicPath": "/images/our-story/portraits/DSC_0111_1.JPG",
+    "width": 6000,
+    "height": 4000,
+    "aspectRatio": 1.5,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "High-resolution master DSLR portrait of Nasreen outdoors in soft daylight with an effortless, radiant smile.",
+    "mood": "radiant",
+    "expression": "luminous and serene",
+    "composition": "medium close-up, negative space on left and top",
+    "dominantColors": [
+      "#d4b2c0",
+      "#a78890",
+      "#9f7f85"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.15,
+      0.35,
+      0.65,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.55,
+        0.4
+      ],
+      "tablet": [
+        0.55,
+        0.4
+      ],
+      "desktop": [
+        0.55,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "left",
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2026,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04",
+      "12",
+      "11"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-005",
+    "filename": "Gray White Simple Love Photo Collage.png",
+    "source": "OurPictures/Gray White Simple Love Photo Collage.png",
+    "publicPath": "/images/our-story/collages/Gray_White_Simple_Love_Photo_Collage.png",
+    "width": 2000,
+    "height": 1600,
+    "aspectRatio": 1.25,
+    "orientation": "landscape",
+    "subject": "both",
+    "description": "Clean white keepsake collage displaying shared smiles and quiet everyday moments.",
+    "mood": "peaceful",
+    "expression": "happy and relaxed",
+    "composition": "clean horizontal photo spread",
+    "dominantColors": [
+      "#ffffff",
+      "#d7cfc9",
+      "#d7d0ca"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.1,
+      0.1,
+      0.9,
+      0.9
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.5
+      ],
+      "tablet": [
+        0.5,
+        0.5
+      ],
+      "desktop": [
+        0.5,
+        0.5
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": null,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-006",
+    "filename": "IMG-20201203-WA0015.jpg",
+    "source": "OurPictures/IMG-20201203-WA0015.jpg",
+    "publicPath": "/images/our-story/memories/IMG-20201203-WA0015.jpg",
+    "width": 780,
+    "height": 1052,
+    "aspectRatio": 0.74,
+    "orientation": "portrait",
+    "subject": "both",
+    "description": "Late-night December 2020 laptop video call during the very first weeks of the relationship.",
+    "mood": "intimate",
+    "expression": "shy and deeply happy",
+    "composition": "screen capture of video call, split view",
+    "dominantColors": [
+      "#ffffff",
+      "#fcffff",
+      "#2f0f14"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.15,
+      0.7,
+      0.65
+    ],
+    "focal": {
+      "mobile": [
+        0.4,
+        0.45
+      ],
+      "tablet": [
+        0.4,
+        0.45
+      ],
+      "desktop": [
+        0.4,
+        0.45
+      ]
+    },
+    "textSafeZones": [
+      "right",
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2020,
+    "category": "Special memories",
+    "candidateSections": [
+      "07",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-007",
+    "filename": "IMG-20201203-WA0016.jpg",
+    "source": "OurPictures/IMG-20201203-WA0016.jpg",
+    "publicPath": "/images/our-story/memories/IMG-20201203-WA0016.jpg",
+    "width": 529,
+    "height": 720,
+    "aspectRatio": 0.73,
+    "orientation": "portrait",
+    "subject": "both",
+    "description": "Mobile video call screen from December 2020 capturing shared laughter across screens.",
+    "mood": "playful",
+    "expression": "laughing warmly",
+    "composition": "mobile video frame, close crop",
+    "dominantColors": [
+      "#0e0d13",
+      "#05060b",
+      "#06070c"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.2,
+      0.7,
+      0.8
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.45
+      ],
+      "tablet": [
+        0.5,
+        0.45
+      ],
+      "desktop": [
+        0.5,
+        0.45
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2020,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06",
+      "09"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-008",
+    "filename": "IMG-20210510-WA0016.jpg",
+    "source": "OurPictures/IMG-20210510-WA0016.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20210510-WA0016.jpg",
+    "width": 325,
+    "height": 575,
+    "aspectRatio": 0.57,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "May 2021 early snapshot of Nasreen in quiet contemplation.",
+    "mood": "quiet",
+    "expression": "gentle and thoughtful",
+    "composition": "tight vertical portrait",
+    "dominantColors": [
+      "#0b090a",
+      "#0c060a",
+      "#0e080c"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.25,
+      0.65,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2021,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04",
+      "09"
+    ],
+    "heroTier": "C",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-009",
+    "filename": "IMG-20210516-WA0011.jpg",
+    "source": "OurPictures/IMG-20210516-WA0011.jpg",
+    "publicPath": "/images/our-story/together/IMG-20210516-WA0011.jpg",
+    "width": 1280,
+    "height": 1280,
+    "aspectRatio": 1.0,
+    "orientation": "square",
+    "subject": "both",
+    "description": "May 2021 square couple portrait of Kausik and Nasreen side-by-side with genuine smiles.",
+    "mood": "warm",
+    "expression": "happy and comfortable together",
+    "composition": "square framing, balanced dual portrait",
+    "dominantColors": [
+      "#ffffff",
+      "#cac4b3",
+      "#bcb2a7"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.2,
+      0.65,
+      0.8
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2021,
+    "category": "Together",
+    "candidateSections": [
+      "05",
+      "08",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-010",
+    "filename": "IMG-20211119-WA0027.jpg",
+    "source": "OurPictures/IMG-20211119-WA0027.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20211119-WA0027.jpg",
+    "width": 660,
+    "height": 1316,
+    "aspectRatio": 0.5,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "November 2021 portrait of Nasreen on the eve of their first anniversary.",
+    "mood": "tender",
+    "expression": "subtle, sweet smile",
+    "composition": "vertical portrait, soft background",
+    "dominantColors": [
+      "#57464e",
+      "#58474f",
+      "#56454d"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.15,
+      0.25,
+      0.6,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2021,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-011",
+    "filename": "IMG-20230108-WA0007.jpg",
+    "source": "OurPictures/IMG-20230108-WA0007.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20230108-WA0007.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "January 2023 outdoor portrait against clear open skies.",
+    "mood": "bright",
+    "expression": "open and cheerful",
+    "composition": "medium vertical portrait",
+    "dominantColors": [
+      "#99c4e6",
+      "#9ac5e7",
+      "#98c5e6"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-012",
+    "filename": "IMG-20230320-WA0039.jpg",
+    "source": "OurPictures/IMG-20230320-WA0039.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20230320-WA0039.jpg",
+    "width": 606,
+    "height": 1280,
+    "aspectRatio": 0.47,
+    "orientation": "portrait",
+    "subject": "both",
+    "description": "March 2023 candid evening conversation.",
+    "mood": "quiet",
+    "expression": "engaged and relaxed",
+    "composition": "intimate indoor frame",
+    "dominantColors": [
+      "#000000",
+      "#010102",
+      "#010203"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.2,
+      0.7,
+      0.8
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.5
+      ],
+      "tablet": [
+        0.5,
+        0.5
+      ],
+      "desktop": [
+        0.5,
+        0.5
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "C",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-013",
+    "filename": "IMG-20230817-WA0027.jpg",
+    "source": "OurPictures/IMG-20230817-WA0027.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20230817-WA0027.jpg",
+    "width": 540,
+    "height": 960,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "August 2023 candid glance captured mid-conversation.",
+    "mood": "spontaneous",
+    "expression": "sparkling eyes, unposed",
+    "composition": "candid vertical snap",
+    "dominantColors": [
+      "#101010",
+      "#111111",
+      "#131313"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "C",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-014",
+    "filename": "IMG-20240411-WA0038.jpg",
+    "source": "OurPictures/IMG-20240411-WA0038.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20240411-WA0038.jpg",
+    "width": 3000,
+    "height": 4000,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "April 2024 3000x4000 high-res portrait of Nasreen outdoors in scenic spring light.",
+    "mood": "radiant",
+    "expression": "joyful and confident",
+    "composition": "balanced vertical medium portrait",
+    "dominantColors": [
+      "#77cadc",
+      "#d0d8da",
+      "#65bbcc"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.15,
+      0.3,
+      0.55,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-015",
+    "filename": "IMG-20240411-WA0043.jpg",
+    "source": "OurPictures/IMG-20240411-WA0043.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20240411-WA0043.jpg",
+    "width": 960,
+    "height": 1280,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "April 2024 portrait capturing a burst of genuine laughter.",
+    "mood": "playful",
+    "expression": "beaming laughter",
+    "composition": "vertical medium shot",
+    "dominantColors": [
+      "#d0dbd7",
+      "#d1dcd8",
+      "#cfdad6"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.18,
+      0.3,
+      0.58,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.38
+      ],
+      "tablet": [
+        0.5,
+        0.38
+      ],
+      "desktop": [
+        0.5,
+        0.38
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Smiles & happiness",
+    "candidateSections": [
+      "04",
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-016",
+    "filename": "IMG-20240411-WA0052.jpg",
+    "source": "OurPictures/IMG-20240411-WA0052.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20240411-WA0052.jpg",
+    "width": 960,
+    "height": 1280,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "April 2024 softly lit portrait reflecting quiet grace.",
+    "mood": "tender",
+    "expression": "calm and gentle",
+    "composition": "vertical portrait, warm highlights",
+    "dominantColors": [
+      "#d8d4c1",
+      "#cac8b8",
+      "#c7c5b5"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.18,
+      0.3,
+      0.58,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.38
+      ],
+      "tablet": [
+        0.5,
+        0.38
+      ],
+      "desktop": [
+        0.5,
+        0.38
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-017",
+    "filename": "IMG-20240430-WA0033.jpg",
+    "source": "OurPictures/IMG-20240430-WA0033.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20240430-WA0033.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "April 2024 casual daily snapshot.",
+    "mood": "everyday",
+    "expression": "relaxed and natural",
+    "composition": "casual phone snapshot",
+    "dominantColors": [
+      "#000000",
+      "#080604",
+      "#dadea4"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "C",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-018",
+    "filename": "IMG-20240524-WA0144.jpg",
+    "source": "OurPictures/IMG-20240524-WA0144.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20240524-WA0144.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "May 2024 portrait surrounded by warm amber and sunlit hues.",
+    "mood": "warm",
+    "expression": "gentle and luminous",
+    "composition": "vertical portrait",
+    "dominantColors": [
+      "#f2eea5",
+      "#c8c496",
+      "#f2eca0"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.15,
+      0.25,
+      0.6,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Beautiful expressions",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-019",
+    "filename": "IMG-20240617-WA0092.jpg",
+    "source": "OurPictures/IMG-20240617-WA0092.jpg",
+    "publicPath": "/images/our-story/portraits/IMG-20240617-WA0092.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "June 2024 evening walk portrait.",
+    "mood": "contemplative",
+    "expression": "quiet smile",
+    "composition": "vertical snap",
+    "dominantColors": [
+      "#0e0603",
+      "#0d0502",
+      "#a09c99"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "C",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-020",
+    "filename": "IMG_0724.JPG",
+    "source": "OurPictures/IMG_0724.JPG",
+    "publicPath": "/images/our-story/portraits/IMG_0724.JPG",
+    "width": 6000,
+    "height": 4000,
+    "aspectRatio": 1.5,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "6000x4000 DSLR master portrait: Nasreen holding a fresh red rose in her hands with an expression of quiet elegance in front of historic stone arches.",
+    "mood": "tender",
+    "expression": "timeless, graceful, and affectionate",
+    "composition": "monumental landscape framing, subject centered right, negative space left",
+    "dominantColors": [
+      "#29354e",
+      "#374466",
+      "#2c3753"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.25,
+      0.55,
+      0.6,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.65,
+        0.4
+      ],
+      "tablet": [
+        0.65,
+        0.4
+      ],
+      "desktop": [
+        0.65,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "left",
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04",
+      "08",
+      "12"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-021",
+    "filename": "IMG_20211208_222515_517.jpg",
+    "source": "OurPictures/IMG_20211208_222515_517.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20211208_222515_517.jpg",
+    "width": 330,
+    "height": 658,
+    "aspectRatio": 0.5,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "December 2021 late evening snapshot.",
+    "mood": "cozy",
+    "expression": "sleepy, warm smile",
+    "composition": "casual indoor snap",
+    "dominantColors": [
+      "#2b2b2b",
+      "#2d2d2d",
+      "#2c2c2c"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2021,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "C",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-022",
+    "filename": "IMG_20220503_095120.jpg",
+    "source": "OurPictures/IMG_20220503_095120.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20220503_095120.jpg",
+    "width": 4160,
+    "height": 3120,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "both",
+    "description": "May 2022 4160x3120 high-resolution celebration outdoors with festive holiday attire.",
+    "mood": "celebratory",
+    "expression": "joyous and proud",
+    "composition": "wide landscape group/pair framing",
+    "dominantColors": [
+      "#151819",
+      "#ffe2e2",
+      "#111213"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2022,
+    "category": "Special memories",
+    "candidateSections": [
+      "05",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-023",
+    "filename": "IMG_20220520_222512_646.jpg",
+    "source": "OurPictures/IMG_20220520_222512_646.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20220520_222512_646.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "May 2022 nighttime candid snap.",
+    "mood": "playful",
+    "expression": "spontaneous grin",
+    "composition": "candid vertical snap",
+    "dominantColors": [
+      "#202020",
+      "#1f1f1f",
+      "#242424"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2022,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "C",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-024",
+    "filename": "IMG_20230812_053236.jpg",
+    "source": "OurPictures/IMG_20230812_053236.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20230812_053236.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "environment",
+    "description": "August 2023 early dawn scenery, quiet misty skies at 5:32 AM.",
+    "mood": "peaceful",
+    "expression": "atmospheric dawn",
+    "composition": "landscape scenery with deep blues and morning mist",
+    "dominantColors": [
+      "#080e22",
+      "#080a18",
+      "#080a16"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.5
+      ],
+      "tablet": [
+        0.5,
+        0.5
+      ],
+      "desktop": [
+        0.5,
+        0.5
+      ]
+    },
+    "textSafeZones": [
+      "center",
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-025",
+    "filename": "IMG_20230812_101039.jpg",
+    "source": "OurPictures/IMG_20230812_101039.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20230812_101039.jpg",
+    "width": 3120,
+    "height": 4160,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "August 2023 daytime portrait outdoors, natural sunlight catching her smile.",
+    "mood": "radiant",
+    "expression": "bright and open",
+    "composition": "vertical portrait",
+    "dominantColors": [
+      "#0d1215",
+      "#0b0f12",
+      "#0c1114"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.15,
+      0.3,
+      0.55,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-026",
+    "filename": "IMG_20230812_101118.jpg",
+    "source": "OurPictures/IMG_20230812_101118.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20230812_101118.jpg",
+    "width": 3120,
+    "height": 4160,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "August 2023 close-up portrait of Nasreen smiling gently.",
+    "mood": "tender",
+    "expression": "warm and intimate",
+    "composition": "tight vertical portrait",
+    "dominantColors": [
+      "#151b1f",
+      "#998e7b",
+      "#171e23"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.15,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-027",
+    "filename": "IMG_20230812_101308.jpg",
+    "source": "OurPictures/IMG_20230812_101308.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20230812_101308.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "August 2023 candid landscape, smiling warmly with architecture in background.",
+    "mood": "cheerful",
+    "expression": "happy laughter",
+    "composition": "landscape framing, subject on right",
+    "dominantColors": [
+      "#0c0808",
+      "#941d30",
+      "#1f191d"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.5,
+      0.6,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.6,
+        0.4
+      ],
+      "tablet": [
+        0.6,
+        0.4
+      ],
+      "desktop": [
+        0.6,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "left",
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-028",
+    "filename": "IMG_20230814_085412.jpg",
+    "source": "OurPictures/IMG_20230814_085412.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20230814_085412.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "August 2023 morning portrait against historic architecture.",
+    "mood": "calm",
+    "expression": "serene and elegant",
+    "composition": "wide architectural framing",
+    "dominantColors": [
+      "#ffffff",
+      "#191e29",
+      "#1f2531"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.25,
+      0.4,
+      0.6,
+      0.6
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Portrait photography",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-029",
+    "filename": "IMG_20230814_085427.jpg",
+    "source": "OurPictures/IMG_20230814_085427.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20230814_085427.jpg",
+    "width": 4160,
+    "height": 3120,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "August 2023 4160x3120 high-res portrait seated peacefully outdoors.",
+    "mood": "reflective",
+    "expression": "gentle and graceful",
+    "composition": "full environment portrait",
+    "dominantColors": [
+      "#cfd7d9",
+      "#ccd6d7",
+      "#d8dde0"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.2,
+      0.4,
+      0.55,
+      0.6
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below",
+      "left"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Portrait photography",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-030",
+    "filename": "IMG_20230814_085519.jpg",
+    "source": "OurPictures/IMG_20230814_085519.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20230814_085519.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "August 2023 candid mid-walk smile.",
+    "mood": "playful",
+    "expression": "spontaneous and sweet",
+    "composition": "landscape framing",
+    "dominantColors": [
+      "#28272c",
+      "#2a292e",
+      "#29282d"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.45,
+      0.6,
+      0.65
+    ],
+    "focal": {
+      "mobile": [
+        0.55,
+        0.4
+      ],
+      "tablet": [
+        0.55,
+        0.4
+      ],
+      "desktop": [
+        0.55,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-031",
+    "filename": "IMG_20230822_102118.jpg",
+    "source": "OurPictures/IMG_20230822_102118.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20230822_102118.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "August 2023 portrait surrounded by fresh greenery.",
+    "mood": "bright",
+    "expression": "content and relaxed",
+    "composition": "medium landscape framing",
+    "dominantColors": [
+      "#ffffff",
+      "#24272c",
+      "#95ae58"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.4,
+      0.6,
+      0.6
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-032",
+    "filename": "IMG_20230822_102957.jpg",
+    "source": "OurPictures/IMG_20230822_102957.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20230822_102957.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "August 2023 portrait with cheerful sunny smile.",
+    "mood": "luminous",
+    "expression": "pure happiness",
+    "composition": "landscape portrait",
+    "dominantColors": [
+      "#eef4f2",
+      "#edf3f1",
+      "#eff5f3"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.45,
+      0.6,
+      0.65
+    ],
+    "focal": {
+      "mobile": [
+        0.55,
+        0.4
+      ],
+      "tablet": [
+        0.55,
+        0.4
+      ],
+      "desktop": [
+        0.55,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Smiles & happiness",
+    "candidateSections": [
+      "04",
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-033",
+    "filename": "IMG_20231018_221857.jpg",
+    "source": "OurPictures/IMG_20231018_221857.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20231018_221857.jpg",
+    "width": 3120,
+    "height": 4160,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "both",
+    "description": "October 2023 candid moment: two hands holding chocolate ice cream cones together, celebrating an impromptu late-night date.",
+    "mood": "playful",
+    "expression": "laughter and sweet indulgence",
+    "composition": "close-up candid macro of hands and ice creams",
+    "dominantColors": [
+      "#101213",
+      "#0f1112",
+      "#0d0f0c"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.1,
+      0.1,
+      0.5,
+      0.5
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.5
+      ],
+      "tablet": [
+        0.5,
+        0.5
+      ],
+      "desktop": [
+        0.5,
+        0.5
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2023,
+    "category": "Together",
+    "candidateSections": [
+      "05",
+      "06",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-034",
+    "filename": "IMG_20240205_105528.jpg",
+    "source": "OurPictures/IMG_20240205_105528.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20240205_105528.jpg",
+    "width": 3120,
+    "height": 4160,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "both",
+    "description": "February 2024 high-resolution couple selfie outdoors, faces close and warmly smiling into the camera.",
+    "mood": "tender",
+    "expression": "affectionate and close",
+    "composition": "intimate couple portrait",
+    "dominantColors": [
+      "#080808",
+      "#b7b0a0",
+      "#0f1318"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.15,
+      0.25,
+      0.6,
+      0.8
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Together",
+    "candidateSections": [
+      "05",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-035",
+    "filename": "IMG_20240205_110314.jpg",
+    "source": "OurPictures/IMG_20240205_110314.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20240205_110314.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "February 2024 landscape candid outdoors with sunlit trees in the distance.",
+    "mood": "peaceful",
+    "expression": "soft smiling expression",
+    "composition": "wide landscape environmental portrait",
+    "dominantColors": [
+      "#e3feff",
+      "#1b2033",
+      "#e9ffff"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.45,
+      0.6,
+      0.65
+    ],
+    "focal": {
+      "mobile": [
+        0.55,
+        0.4
+      ],
+      "tablet": [
+        0.55,
+        0.4
+      ],
+      "desktop": [
+        0.55,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below",
+      "left"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-036",
+    "filename": "IMG_20240205_110503.jpg",
+    "source": "OurPictures/IMG_20240205_110503.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20240205_110503.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "February 2024 candid walk, looking back with a gentle smile.",
+    "mood": "tender",
+    "expression": "affectionate glance back",
+    "composition": "landscape medium shot",
+    "dominantColors": [
+      "#12172a",
+      "#151a2d",
+      "#111528"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.45,
+      0.6,
+      0.65
+    ],
+    "focal": {
+      "mobile": [
+        0.55,
+        0.4
+      ],
+      "tablet": [
+        0.55,
+        0.4
+      ],
+      "desktop": [
+        0.55,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-037",
+    "filename": "IMG_20240205_111111.jpg",
+    "source": "OurPictures/IMG_20240205_111111.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20240205_111111.jpg",
+    "width": 2448,
+    "height": 3264,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "February 2024 vertical portrait against architectural background.",
+    "mood": "calm",
+    "expression": "quiet grace",
+    "composition": "vertical portrait",
+    "dominantColors": [
+      "#212639",
+      "#1e2233",
+      "#24283a"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.15,
+      0.3,
+      0.55,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-038",
+    "filename": "IMG_20240205_111730.jpg",
+    "source": "OurPictures/IMG_20240205_111730.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20240205_111730.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "February 2024 landscape candid outdoors with soft blue sky overhead.",
+    "mood": "gentle",
+    "expression": "peaceful",
+    "composition": "wide environmental framing",
+    "dominantColors": [
+      "#e6fbff",
+      "#def5fd",
+      "#e2f8fe"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.25,
+      0.45,
+      0.65,
+      0.65
+    ],
+    "focal": {
+      "mobile": [
+        0.55,
+        0.45
+      ],
+      "tablet": [
+        0.55,
+        0.45
+      ],
+      "desktop": [
+        0.55,
+        0.45
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-039",
+    "filename": "IMG_20240205_112413.jpg",
+    "source": "OurPictures/IMG_20240205_112413.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20240205_112413.jpg",
+    "width": 3120,
+    "height": 4160,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "February 2024 vertical portrait with natural backlighting.",
+    "mood": "warm",
+    "expression": "soft smile",
+    "composition": "vertical portrait",
+    "dominantColors": [
+      "#cadee9",
+      "#ccdce9",
+      "#c9dde8"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.15,
+      0.3,
+      0.55,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-040",
+    "filename": "IMG_20240205_112434.jpg",
+    "source": "OurPictures/IMG_20240205_112434.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20240205_112434.jpg",
+    "width": 3120,
+    "height": 4160,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "February 2024 high-res vertical portrait capturing pure radiant laughter.",
+    "mood": "radiant",
+    "expression": "beaming genuine joy",
+    "composition": "vertical close portrait",
+    "dominantColors": [
+      "#d9eeff",
+      "#d8eeff",
+      "#ddf0ff"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.15,
+      0.25,
+      0.55,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Smiles & happiness",
+    "candidateSections": [
+      "04",
+      "06"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-041",
+    "filename": "IMG_20240207_094420.jpg",
+    "source": "OurPictures/IMG_20240207_094420.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20240207_094420.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "both",
+    "description": "February 2024 casual morning together outdoors.",
+    "mood": "relaxed",
+    "expression": "comfortable companionship",
+    "composition": "wide landscape framing",
+    "dominantColors": [
+      "#080606",
+      "#14100e",
+      "#0c0a09"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Candid moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-042",
+    "filename": "IMG_20240207_101409.jpg",
+    "source": "OurPictures/IMG_20240207_101409.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20240207_101409.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "Nasreen",
+    "description": "February 2024 sunny morning walk portrait.",
+    "mood": "bright",
+    "expression": "sweet smile",
+    "composition": "landscape medium shot",
+    "dominantColors": [
+      "#0e0f14",
+      "#eaeef4",
+      "#f2ffff"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.45,
+      0.6,
+      0.65
+    ],
+    "focal": {
+      "mobile": [
+        0.55,
+        0.4
+      ],
+      "tablet": [
+        0.55,
+        0.4
+      ],
+      "desktop": [
+        0.55,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-043",
+    "filename": "IMG_20240329_215759_214.jpg",
+    "source": "OurPictures/IMG_20240329_215759_214.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20240329_215759_214.jpg",
+    "width": 640,
+    "height": 1138,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "March 2024 casual late evening snapshot.",
+    "mood": "everyday",
+    "expression": "casual smile",
+    "composition": "vertical phone snap",
+    "dominantColors": [
+      "#040903",
+      "#030802",
+      "#030801"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Everyday moments",
+    "candidateSections": [
+      "06"
+    ],
+    "heroTier": "C",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-044",
+    "filename": "IMG_20240329_215801_687.jpg",
+    "source": "OurPictures/IMG_20240329_215801_687.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20240329_215801_687.jpg",
+    "width": 640,
+    "height": 1138,
+    "aspectRatio": 0.56,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "March 2024 near-duplicate snapshot taken one second after previous frame.",
+    "mood": "everyday",
+    "expression": "casual smile",
+    "composition": "vertical phone snap",
+    "dominantColors": [
+      "#030802",
+      "#040903",
+      "#b1ca39"
+    ],
+    "quality": 3,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": "ph-043",
+    "timeline": 2024,
+    "category": "Everyday moments",
+    "candidateSections": [],
+    "heroTier": "X",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-045",
+    "filename": "IMG_20240617_091633.jpg",
+    "source": "OurPictures/IMG_20240617_091633.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20240617_091633.jpg",
+    "width": 1920,
+    "height": 1088,
+    "aspectRatio": 1.76,
+    "orientation": "landscape",
+    "subject": "both",
+    "description": "June 2024 widescreen 1920x1088 outdoor landscape capturing open space and shared journey.",
+    "mood": "peaceful",
+    "expression": "relaxed and quiet",
+    "composition": "cinematic 16:9 panoramic perspective",
+    "dominantColors": [
+      "#fefefe",
+      "#ffffff",
+      "#f0f9fe"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.2,
+      0.4,
+      0.6,
+      0.6
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Special memories",
+    "candidateSections": [
+      "05",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-046",
+    "filename": "IMG_20240801_040421.jpg",
+    "source": "OurPictures/IMG_20240801_040421.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20240801_040421.jpg",
+    "width": 1500,
+    "height": 1999,
+    "aspectRatio": 0.75,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "August 2024 high-res portrait of Nasreen in elegant white attire with calm poise.",
+    "mood": "serene",
+    "expression": "graceful and composed",
+    "composition": "medium vertical portrait",
+    "dominantColors": [
+      "#ffffff",
+      "#fdfdf3",
+      "#fefefb"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.15,
+      0.25,
+      0.55,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Nasreen portraits",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-047",
+    "filename": "IMG_20241017_102254.jpg",
+    "source": "OurPictures/IMG_20241017_102254.jpg",
+    "publicPath": "/images/our-story/portraits/IMG_20241017_102254.jpg",
+    "width": 1496,
+    "height": 2272,
+    "aspectRatio": 0.66,
+    "orientation": "portrait",
+    "subject": "Nasreen",
+    "description": "October 2024 vertical portrait outdoors with soft cool-toned background.",
+    "mood": "tender",
+    "expression": "quiet, sweet smile",
+    "composition": "vertical portrait",
+    "dominantColors": [
+      "#ffffff",
+      "#acb0dd",
+      "#f8f8f8"
+    ],
+    "quality": 4,
+    "faceSafeZone": [
+      0.15,
+      0.25,
+      0.55,
+      0.75
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.35
+      ],
+      "tablet": [
+        0.5,
+        0.35
+      ],
+      "desktop": [
+        0.5,
+        0.35
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2024,
+    "category": "Portrait photography",
+    "candidateSections": [
+      "04"
+    ],
+    "heroTier": "B",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-048",
+    "filename": "IMG_20250420_201853.jpg",
+    "source": "OurPictures/IMG_20250420_201853.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20250420_201853.jpg",
+    "width": 4096,
+    "height": 1832,
+    "aspectRatio": 2.24,
+    "orientation": "landscape",
+    "subject": "both",
+    "description": "April 2025 4096x1832 cinematic ultrawide sunset panorama bathed in warm rose-gold horizon glow.",
+    "mood": "cinematic",
+    "expression": "gazing into evening horizon",
+    "composition": "ultrawide 21:9 panoramic composition with generous sky",
+    "dominantColors": [
+      "#e28c6f",
+      "#eef1f6",
+      "#e8ecf5"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.3,
+      0.4,
+      0.7,
+      0.6
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.5
+      ],
+      "tablet": [
+        0.5,
+        0.5
+      ],
+      "desktop": [
+        0.5,
+        0.5
+      ]
+    },
+    "textSafeZones": [
+      "above",
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2025,
+    "category": "Special memories",
+    "candidateSections": [
+      "05",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  },
+  {
+    "id": "ph-049",
+    "filename": "IMG_20250607_104001.jpg",
+    "source": "OurPictures/IMG_20250607_104001.jpg",
+    "publicPath": "/images/our-story/gallery/IMG_20250607_104001.jpg",
+    "width": 3264,
+    "height": 2448,
+    "aspectRatio": 1.33,
+    "orientation": "landscape",
+    "subject": "both",
+    "description": "June 2025 3264x2448 high-res shared travel memory under bright morning sunshine.",
+    "mood": "joyous",
+    "expression": "bright smiles, side by side",
+    "composition": "landscape pair portrait",
+    "dominantColors": [
+      "#dbe9fb",
+      "#dfe6f4",
+      "#cfdced"
+    ],
+    "quality": 5,
+    "faceSafeZone": [
+      0.2,
+      0.3,
+      0.6,
+      0.7
+    ],
+    "focal": {
+      "mobile": [
+        0.5,
+        0.4
+      ],
+      "tablet": [
+        0.5,
+        0.4
+      ],
+      "desktop": [
+        0.5,
+        0.4
+      ]
+    },
+    "textSafeZones": [
+      "below"
+    ],
+    "duplicateOf": null,
+    "timeline": 2025,
+    "category": "Together",
+    "candidateSections": [
+      "05",
+      "09"
+    ],
+    "heroTier": "A",
+    "reviewStatus": "visually-verified"
+  }
+]

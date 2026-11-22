@@ -49,16 +49,17 @@ export const CounterScene: React.FC = () => {
   return (
     <section
       id="counter"
-      className="relative min-h-screen py-24 sm:py-36 px-6 sm:px-12 select-none overflow-hidden"
+      data-section="our-six-years"
+      className="relative min-h-screen py-24 sm:py-36 px-6 sm:px-12 select-none overflow-hidden bg-gradient-to-b from-wine-950 via-burgundy-950/80 to-wine-950"
     >
       <div className="max-w-6xl mx-auto space-y-24">
         {/* COUNTER CONTAINER */}
         <div className="text-center max-w-4xl mx-auto">
-          <span className="text-xs uppercase tracking-[0.3em] text-rosegold-300 mb-3 block">
-            Scene VIII · The Measure of Devotion
+          <span className="text-[11px] font-sans uppercase tracking-[0.35em] text-rosegold-300 py-1.5 px-4 rounded-full border border-rosegold-400/20 bg-burgundy-900/30 backdrop-blur-sm mb-6 inline-block">
+            Scene III · Our Six Years
           </span>
 
-          <h2 className="font-serif text-3xl sm:text-5xl text-ivory-50 tracking-[0.05em]">
+          <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-ivory-50 tracking-tight font-light mt-4">
             {mode === 'before'
               ? 'Countdown to Our Sixth Anniversary'
               : mode === 'anniversary'
@@ -66,13 +67,13 @@ export const CounterScene: React.FC = () => {
               : 'Our Journey Together — Every Second Counted'}
           </h2>
 
-          <p className="font-sans text-xs sm:text-sm text-ivory-50/70 uppercase tracking-[0.2em] mt-3">
+          <p className="font-sans text-xs sm:text-sm text-ivory-50/70 uppercase tracking-[0.25em] mt-3">
             {mode === 'before'
-              ? '23 November 2026 · Asia/Kolkata Timezone'
-              : 'Started 23 November 2020 · Living Forever'}
+              ? '23 November 2020 → 23 November 2026 · Asia/Kolkata'
+              : 'Started 23 November 2020 · 2,191 Days of Devotion'}
           </p>
 
-          {/* Time Display Grid */}
+          {/* Time Display Grid with Tabular Numerals */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 mt-12">
             {timeUnits.map((unit) => (
               <motion.div
@@ -80,7 +81,7 @@ export const CounterScene: React.FC = () => {
                 whileHover={{ y: -4 }}
                 className="bg-wine-950/80 backdrop-blur-xl border border-rosegold-400/30 rounded-2xl p-6 shadow-luxury flex flex-col items-center justify-center"
               >
-                <span className="font-serif text-4xl sm:text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-b from-ivory-50 via-blush-200 to-rosegold-300 font-light">
+                <span className="font-serif tabular-nums text-4xl sm:text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-b from-ivory-50 via-blush-200 to-rosegold-300 font-light">
                   {unit.value.toString().padStart(2, '0')}
                 </span>
                 <span className="text-[10px] uppercase tracking-[0.25em] text-rosegold-300 mt-2">

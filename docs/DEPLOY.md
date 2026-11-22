@@ -1,4 +1,4 @@
-# KAUSEEN — DEPLOYMENT & HOSTING GUIDE
+# K & N — DEPLOYMENT & HOSTING GUIDE
 *Deploying Your Private Digital Keepsake Safely*
 
 ---
@@ -58,7 +58,7 @@ Before sharing the link with your partner:
 
 ## 5. PERMANENT OFFLINE ARCHIVAL (USB KEEPSAKE)
 
-If you wish to preserve KAUSEEN permanently as an offline physical gift (e.g., on a luxury engraved USB drive or private local drive):
+If you wish to preserve K & N permanently as an offline physical gift (e.g., on a luxury engraved USB drive or private local drive):
 1. In `next.config.js`, set `output: 'export'`.
 2. Run `npm run build`.
 3. The resulting `/out` directory contains a 100% self-contained static website that can be opened locally in any modern browser without an active internet connection.

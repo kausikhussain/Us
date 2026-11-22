@@ -1,4 +1,4 @@
-# KAUSEEN — TECHNICAL ARCHITECTURE
+# K & N — TECHNICAL ARCHITECTURE
 *A High-Performance, Cinematic WebGL & Motion Architecture*
 
 ---

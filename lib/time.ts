@@ -1,5 +1,5 @@
 /**
- * Accurate Time & Calendar Math for KAUSEEN
+ * Accurate Time & Calendar Math for K & N
  * Timezone: Asia/Kolkata (+05:30)
  * Start Date: 2020-11-23T00:00:00+05:30
  * Sixth Anniversary: 2026-11-23T00:00:00+05:30

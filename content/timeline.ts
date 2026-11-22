@@ -23,9 +23,9 @@ export const TIMELINE_DATA: TimelineMilestone[] = [
   {
     year: 2020,
     dateString: "23 November 2020",
-    heading: "The Beginning of Everything",
+    heading: "Where It All Began",
     summary: "The quiet, beautiful beginning of something that would change our lives completely. A single day that turned into the anchor of our story.",
-    quote: "Somewhere between ordinary days and unforgettable moments, you became my favourite part of life.",
+    quote: "We began with a tentative first conversation; six years later, you are woven into every thought I have.",
     photos: [
       {
         src: "/images/our-story/memories/IMG-20201203-WA0015.jpg",
@@ -45,9 +45,9 @@ export const TIMELINE_DATA: TimelineMilestone[] = [
   {
     year: 2021,
     dateString: "November 2021",
-    heading: "Learning Each Other",
+    heading: "Becoming a Part of Each Other's Days",
     summary: "One full year of discovering the nuances of each other's smiles, sharing late-night conversations, and realizing that home is a person.",
-    quote: "With every passing season, choosing you was the easiest decision I ever made.",
+    quote: "Loving you has always felt as natural and quiet as drawing a morning breath.",
     photos: [
       {
         src: "/images/our-story/together/IMG-20210516-WA0011.jpg",
@@ -67,9 +67,9 @@ export const TIMELINE_DATA: TimelineMilestone[] = [
   {
     year: 2022,
     dateString: "November 2022",
-    heading: "Little Moments, Big Memories",
+    heading: "Collecting Little Memories",
     summary: "By the second year, our memories had accumulated like treasures. The shared playlists, the unprompted laughter, and the peace of quiet company.",
-    quote: "Some people become memories. Some become home. You became both, in the most beautiful way.",
+    quote: "We walked into each other’s stories as quiet acquaintances and built an entire shared world together.",
     photos: [
       {
         src: "/images/our-story/gallery/IMG_20220503_095120.jpg",
@@ -91,7 +91,7 @@ export const TIMELINE_DATA: TimelineMilestone[] = [
     dateString: "November 2023",
     heading: "Growing Together",
     summary: "Three years of navigating life side by side. Celebrating every victory, supporting each other through changes, and knowing our roots were deep.",
-    quote: "Among all the stories written across this universe, ours remains my absolute favourite.",
+    quote: "Sharing an ice cream on an ordinary pavement can feel richer than any banquet when I am with you.",
     photos: [
       {
         src: "/images/our-story/portraits/IMG_20231018_221857.jpg",
@@ -111,9 +111,9 @@ export const TIMELINE_DATA: TimelineMilestone[] = [
   {
     year: 2024,
     dateString: "November 2024",
-    heading: "A Thousand More Reasons",
+    heading: "More Chapters, More Feelings",
     summary: "Through busy days, quiet evenings, and countless journeys. Knowing that whatever tomorrow brings, having your hand in mine is all the certainty I need.",
-    quote: "Every chapter feels better, softer, and more meaningful because it is lived with you.",
+    quote: "Through every unexpected turn of these past seasons, holding your hand kept my footing sure.",
     photos: [
       {
         src: "/images/our-story/portraits/IMG-20240411-WA0038.jpg",
@@ -133,9 +133,9 @@ export const TIMELINE_DATA: TimelineMilestone[] = [
   {
     year: 2025,
     dateString: "November 2025",
-    heading: "Still My Favourite Person",
+    heading: "Still My Favourite Story",
     summary: "Five years of love that grew deeper, calmer, and more grateful. Not just loving each other on celebratory days, but in every small, everyday gesture.",
-    quote: "Six years later, and your smile still feels like my favourite place in the world.",
+    quote: "I look forward to growing older with you, watching our stories collect like fallen autumn leaves.",
     photos: [
       {
         src: "/images/our-story/gallery/IMG_20250420_201853.jpg",
@@ -155,9 +155,9 @@ export const TIMELINE_DATA: TimelineMilestone[] = [
   {
     year: 2026,
     dateString: "23 November 2026",
-    heading: "Six Years and Forever Beyond",
+    heading: "Six Years and Beyond",
     summary: "Six complete years. 2,191 days of being loved by you, growing with you, and building our world together. Today is our celebration, and every tomorrow belongs to us.",
-    quote: "Six Years. One Story. A Thousand Feelings. And an entire lifetime waiting ahead.",
+    quote: "Six years, two thousand one hundred and ninety-one days, and yet time still moves too quickly beside you.",
     photos: [
       {
         src: "/images/our-story/portraits/DSC_0111_1.JPG",

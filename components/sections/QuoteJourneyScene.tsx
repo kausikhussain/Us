@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { Heart, Sparkles, Shuffle, Bookmark, Quote } from 'lucide-react';
 
 export const QuoteJourneyScene: React.FC = () => {
-  const [activeCategory, setActiveCategory] = useState<QuoteCategory>('The Beginning');
+  const [activeCategory, setActiveCategory] = useState<QuoteCategory>(QUOTE_CATEGORIES[0]);
   const [randomNote, setRandomNote] = useState<QuoteItem | null>(null);
   const [isDrawingNote, setIsDrawingNote] = useState(false);
 
@@ -30,7 +30,7 @@ export const QuoteJourneyScene: React.FC = () => {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto">
           <span className="text-xs uppercase tracking-[0.3em] text-rosegold-300 mb-3 block">
-            Scene V · The Quote Journey
+            Scene VII · The Quote Journey
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-ivory-50 tracking-[0.05em] leading-tight">
             A Thousand Things I Feel, A Few I Can Put Into Words.

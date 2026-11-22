@@ -1,5 +1,5 @@
 /**
- * Audio Engine for KAUSEEN
+ * Audio Engine for K & N
  * Handles audio playback, session persistence, smooth crossfading,
  * and a procedural harmonic ambient romantic synthesizer fallback.
  */
@@ -17,11 +17,11 @@ class SoundEngine {
 
   constructor() {
     if (typeof window !== 'undefined') {
-      const savedMute = sessionStorage.getItem('kauseen_audio_muted');
+      const savedMute = sessionStorage.getItem('kn_audio_muted');
       if (savedMute !== null) {
         this.isMuted = savedMute === 'true';
       }
-      const savedVol = sessionStorage.getItem('kauseen_audio_vol');
+      const savedVol = sessionStorage.getItem('kn_audio_vol');
       if (savedVol !== null) {
         this.volume = parseFloat(savedVol);
       }
@@ -124,7 +124,7 @@ class SoundEngine {
       this.audioElement.volume = this.isMuted ? 0 : this.volume;
     }
     if (typeof window !== 'undefined') {
-      sessionStorage.setItem('kauseen_audio_vol', this.volume.toString());
+      sessionStorage.setItem('kn_audio_vol', this.volume.toString());
     }
   }
 
@@ -132,7 +132,7 @@ class SoundEngine {
     this.isMuted = !this.isMuted;
     this.setVolume(this.volume);
     if (typeof window !== 'undefined') {
-      sessionStorage.setItem('kauseen_audio_muted', this.isMuted.toString());
+      sessionStorage.setItem('kn_audio_muted', this.isMuted.toString());
     }
     return this.isMuted;
   }

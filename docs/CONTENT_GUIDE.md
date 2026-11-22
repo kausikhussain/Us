@@ -1,7 +1,7 @@
-# KAUSEEN — CONTENT PERSONALIZATION GUIDE
+# K & N — CONTENT PERSONALIZATION GUIDE
 *How to Personalize Your Photos, Letters, Milestones, and Songs*
 
-Welcome to the KAUSEEN personalization guide. Every personal memory, letter, photograph, quote, and song lives in clean, human-readable data files inside the `/content/` directory. You do **not** need to touch any UI or code files.
+Welcome to the K & N personalization guide. Every personal memory, letter, photograph, quote, and song lives in clean, human-readable data files inside the `/content/` directory. You do **not** need to touch any UI or code files.
 
 ---
 
@@ -89,7 +89,7 @@ export const LETTERS_DATA: LoveLetter[] = [
      }
    ];
    ```
-   *Note: If no mp3 files are provided yet, KAUSEEN features a built-in lush ambient audio synthesizer so the music player and visualizer are immediately interactive and beautiful out of the box!*
+   *Note: If no mp3 files are provided yet, K & N features a built-in lush ambient audio synthesizer so the music player and visualizer are immediately interactive and beautiful out of the box!*
 
 ---
 
