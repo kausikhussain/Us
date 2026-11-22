@@ -65,24 +65,21 @@ export const TimelineScene: React.FC = () => {
               <button
                 key={milestone.year}
                 onClick={() => setSelectedYear(milestone.year)}
-                className={`relative group px-3 py-2 flex flex-col items-center transition-all ${
-                  isActive ? 'scale-110' : 'opacity-40 hover:opacity-80'
-                }`}
+                className={`relative group px-3 py-2 flex flex-col items-center transition-all ${isActive ? 'scale-110' : 'opacity-40 hover:opacity-80'
+                  }`}
                 aria-label={`View milestone for year ${milestone.year}`}
               >
                 <span
-                  className={`font-serif text-3xl sm:text-4xl md:text-5xl tracking-[0.08em] transition-colors ${
-                    isActive
-                      ? 'text-transparent bg-clip-text bg-gradient-to-r from-ivory-50 to-rosegold-300 font-normal drop-shadow-crimson-glow'
-                      : 'text-ivory-50/40 font-light'
-                  }`}
+                  className={`font-serif text-3xl sm:text-4xl md:text-5xl tracking-[0.08em] transition-colors ${isActive
+                    ? 'text-transparent bg-clip-text bg-gradient-to-r from-ivory-50 to-rosegold-300 font-normal drop-shadow-crimson-glow'
+                    : 'text-ivory-50/40 font-light'
+                    }`}
                 >
                   {milestone.year}
                 </span>
                 <span
-                  className={`text-[9px] uppercase tracking-[0.2em] mt-1 transition-colors ${
-                    isActive ? 'text-crimson-600 font-medium' : 'text-transparent'
-                  }`}
+                  className={`text-[9px] uppercase tracking-[0.2em] mt-1 transition-colors ${isActive ? 'text-crimson-600 font-medium' : 'text-transparent'
+                    }`}
                 >
                   {milestone.highlightBadge}
                 </span>
