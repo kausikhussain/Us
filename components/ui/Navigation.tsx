@@ -44,8 +44,8 @@ export const Navigation: React.FC = () => {
 
   const handleLock = async () => {
     try {
-      await fetch('/api/auth/lock', { method: 'POST' });
-    } catch {}
+      await fetch('/api/auth/logout', { method: 'POST' });
+    } catch { }
     window.dispatchEvent(new CustomEvent('kn:lock'));
     window.location.reload();
   };
@@ -53,11 +53,10 @@ export const Navigation: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-          scrolled
-            ? 'py-3 bg-wine-950/85 backdrop-blur-md border-b border-rosegold-400/20 shadow-luxury'
-            : 'py-5 bg-transparent'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${scrolled
+          ? 'py-3 bg-wine-950/85 backdrop-blur-md border-b border-rosegold-400/20 shadow-luxury'
+          : 'py-5 bg-transparent'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between">
           {/* Brand Monogram & Name K & N */}

@@ -1,7 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import { useAppStore } from '@/lib/store';
 import { LenisProvider } from '@/components/ui/LenisProvider';
 import { InitialLoader } from '@/components/ui/InitialLoader';
 import { Navigation } from '@/components/ui/Navigation';
@@ -32,6 +33,21 @@ const MainCanvas = dynamic(
 );
 
 export const MainStoryApp: React.FC = () => {
+  const { setPrivateContent } = useAppStore();
+
+  useEffect(() => {
+    fetch('/api/private/content')
+      .then((res) => res.json())
+      .then((data) => {
+        if (data?.success && data?.content) {
+          setPrivateContent(data.content);
+        }
+      })
+      .catch((err) => {
+        console.error('Failed to fetch private content:', err);
+      });
+  }, [setPrivateContent]);
+
   return (
     <LenisProvider>
       {/* Initial Monogram Drawing Loader */}

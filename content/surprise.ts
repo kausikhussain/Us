@@ -15,15 +15,17 @@ export const SurpriseSchema = z.object({
 
 export type SurpriseConfig = z.infer<typeof SurpriseSchema>;
 
+// Client bundle safe fallback shell. Real surprise served via authenticated /api/private/content.
 export const SURPRISE_DATA: SurpriseConfig = {
-  title: "A Little Something for You",
-  subtitle: "Bound in silk ribbon, kept safe just for this very moment.",
-  instruction: "Press & hold the seal to unlock your surprise",
-  unlockedTitle: "Dearest Nasreen,",
-  secretMessage: "In a life full of rushing hours and fleeting noise, you have been my favourite peace. Thank you for six unforgettable years of laughter, warmth, and quiet understanding. Walking beside you has been the greatest gift I have ever known. Happy 6th Anniversary, with all my love — Kausik.",
+  title: 'A Little Something for You',
+  subtitle: 'Bound in silk ribbon, kept safe just for this very moment.',
+  instruction: 'Press & hold the seal to unlock your surprise',
+  unlockedTitle: 'Dearest Nasreen,',
+  secretMessage:
+    'Private keepsake message. Identity verification and multi-factor authentication required to reveal.',
   photo: {
-    src: "/images/our-story/portraits/DSC_0111_1.JPG",
-    alt: "A treasured portrait of Nasreen revealed from the sealed gift",
-    caption: "Kausik & Nasreen — 23 November 2020 through every tomorrow.",
+    src: '/api/media/images/our-story/portraits/DSC_0111_1.JPG',
+    alt: 'A treasured portrait of Nasreen revealed from the sealed gift',
+    caption: 'Kausik & Nasreen — 23 November 2020 through every tomorrow.',
   },
 };

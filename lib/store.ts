@@ -1,9 +1,28 @@
 import { create } from 'zustand';
 import { SONGS_DATA, SongTrack } from '@/content/songs';
+import { LoveLetter } from '@/content/letters';
+import { SurpriseConfig } from '@/content/surprise';
+import { QuoteItem, QuoteCategory } from '@/content/quotes';
+import { Pairing } from '@/content/photo-quote-pairings';
+import { TimelineMilestone } from '@/content/timeline';
 
 export type QualityTier = 'high' | 'medium' | 'low' | 'static';
 
+export interface PrivateContentPayload {
+  letters: LoveLetter[];
+  surprise: SurpriseConfig;
+  quotes: QuoteItem[];
+  quoteCategories: QuoteCategory[];
+  pairings: Pairing[];
+  timeline: TimelineMilestone[];
+  songs: SongTrack[];
+}
+
 interface AppStore {
+  // Private Authenticated Content
+  privateContent: PrivateContentPayload | null;
+  setPrivateContent: (content: PrivateContentPayload) => void;
+
   // Audio state
   isPlaying: boolean;
   currentTrackIndex: number;
@@ -55,6 +74,9 @@ interface AppStore {
 }
 
 export const useAppStore = create<AppStore>((set, get) => ({
+  privateContent: null,
+  setPrivateContent: (privateContent) => set({ privateContent }),
+
   isPlaying: false,
   currentTrackIndex: 0,
   currentTrack: SONGS_DATA[0],

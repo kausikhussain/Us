@@ -73,3 +73,23 @@
 - **Decision:** Zero external CDNs or remote dependencies for core assets.
 - **Audio Engine:** HTML5 Web Audio API singleton with smooth gain-node crossfading, vinyl rotation physics, and non-intrusive bottom-right dock.
 - **3D Graphics:** Three.js / React Three Fiber canvas with floating silk particles, subtle chromatic aberration, and automatic frame throttling when offscreen.
+
+---
+
+## 8. Ultra-Premium Security Upgrade & MFA Architecture (v2)
+- **Decision:** Elevate the anniversary application into a strictly private, invitation-only, MFA-protected application.
+- **Threat Model & Boundaries:** Modeled 8 adversary classes in `THREAT_MODEL.md`. Defined explicit trust boundaries (Edge, Authenticated Server, Cryptographic Identity, Private Storage).
+- **Identity Architecture:** Built upon gold-standard W3C / FIDO2 Level 2/3 WebAuthn (`@simplewebauthn/server` and `@simplewebauthn/browser`) and RFC 6238 TOTP (`otpauth`).
+- **Fail-Closed Authorization:** Every route handler and API endpoint verifies the session via a shared `requireAccess()` guard, checking:
+  1. Cryptographic token validity & signature (HMAC-SHA256 / EdDSA via `jose`).
+  2. Account email verification.
+  3. Server-side immutable allowlist membership by `userId`.
+  4. Explicit MFA completion (`aal: "aal2"`).
+- **Private Content & Media Decoupling:**
+  - Love letters, quotes, surprise text removed from static client JavaScript bundles and served exclusively via `/api/private/content`.
+  - Photos and audio files moved from public web folders to `private_media/` and served via authenticated streaming `/api/media/[...path]` with HTTP Range request support for audio seeking.
+- **Bypass Elimination:** Completely removed the guessable anniversary date passcode (`23112020`), legacy fallback gates, and storage flags.
+- **Edge-Safe Session Verification:** Decoupled edge middleware session verification into `lib/auth/edge-session.ts` using JOSE Web Crypto (`crypto.subtle`), avoiding Node.js `fs`/`path` constraints at the edge while preserving full defense-in-depth in Node.js serverless route guards.
+- **Strict HTTP Security Headers:** Enforced HSTS (`max-age=31536000; includeSubDomains; preload`), `X-Frame-Options: DENY`, `X-Content-Type-Options: nosniff`, `Referrer-Policy: no-referrer`, and a comprehensive Content Security Policy restricting media, styles, scripts, and font origins.
+- **Serverless Media Asset Tracing:** Added `outputFileTracingIncludes` in `next.config.js` for `/api/media/**` mapped to `./private_media/**` ensuring Vercel Lambda packaging includes all protected media.
+- **Client Bundle Sanitization:** Sanitized `content/letters.ts` and `content/surprise.ts` into client-safe placeholder shells, with canary scanner confirming 0 canary string leaks in compiled static JS chunks.

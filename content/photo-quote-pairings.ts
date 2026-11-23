@@ -25,6 +25,8 @@ export type SectionId =
   | '12-final-memory'
   | '13-finale';
 
+export type PhotoQuotePairing = Pairing;
+
 export interface Pairing {
   photoId: string;
   imagePath: string;

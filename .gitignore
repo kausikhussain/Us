@@ -19,8 +19,15 @@
 .DS_Store
 *.pem
 
-# Local env files
+# Local env files & security credentials
+.env
 .env*.local
+.system_generated/
+data/users.json
+data/revoked-tokens.json
+
+# Raw Unoptimized Camera Archive (Kept locally only)
+OurPictures/
 
 # Vercel
 .vercel
@@ -28,5 +35,3 @@
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
-
-.vercel

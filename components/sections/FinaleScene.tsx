@@ -13,7 +13,7 @@ export const FinaleScene: React.FC = () => {
 
   const handleLock = async () => {
     try {
-      await fetch('/api/auth/lock', { method: 'POST' });
+      await fetch('/api/auth/logout', { method: 'POST' });
     } catch {}
     window.dispatchEvent(new CustomEvent('kn:lock'));
     window.location.reload();

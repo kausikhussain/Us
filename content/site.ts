@@ -11,8 +11,6 @@ export const SiteConfigSchema = z.object({
   startDate: z.string(), // ISO string with Asia/Kolkata offset
   anniversaryDate: z.string(), // ISO string with Asia/Kolkata offset
   timezone: z.string(),
-  accessPasscode: z.string(),
-  enablePasscodeGate: z.boolean(),
   songs: z.array(z.string()),
   cinematicSubtitle: z.string(),
 });
@@ -31,7 +29,5 @@ export const SITE_CONFIG: SiteConfig = {
   startDate: "2020-11-23T00:00:00+05:30",
   anniversaryDate: "2026-11-23T00:00:00+05:30",
   timezone: "Asia/Kolkata",
-  accessPasscode: "23112020",
-  enablePasscodeGate: true,
   songs: ["Alfaaz", "Dilruba Dilnasee"],
 };

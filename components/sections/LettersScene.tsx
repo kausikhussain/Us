@@ -15,11 +15,13 @@ export const LettersScene: React.FC = () => {
     setIsEnvelopeOpen,
     letterRevealMode,
     setLetterRevealMode,
+    privateContent,
   } = useAppStore();
 
+  const letters = privateContent?.letters || LETTERS_DATA;
   const [revealedParagraphs, setRevealedParagraphs] = useState<number>(1);
   const activeLetter =
-    LETTERS_DATA.find((l) => l.id === activeLetterId) || LETTERS_DATA[0];
+    letters.find((l) => l.id === activeLetterId) || letters[0];
 
   const handleOpenEnvelope = () => {
     setIsEnvelopeOpen(true);
@@ -61,7 +63,7 @@ export const LettersScene: React.FC = () => {
 
           {/* Letter Switcher Tabs */}
           <div className="flex flex-wrap items-center justify-center gap-3 mt-8">
-            {LETTERS_DATA.map((letter) => {
+            {letters.map((letter) => {
               const isActive = letter.id === activeLetterId;
               return (
                 <button

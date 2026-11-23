@@ -9,7 +9,8 @@ import Image from 'next/image';
 import confetti from 'canvas-confetti';
 
 export const SurpriseScene: React.FC = () => {
-  const { isSurpriseUnlocked, setIsSurpriseUnlocked } = useAppStore();
+  const { isSurpriseUnlocked, setIsSurpriseUnlocked, privateContent } = useAppStore();
+  const surprise = privateContent?.surprise || SURPRISE_DATA;
   const [holdingProgress, setHoldingProgress] = useState(0);
   const holdIntervalRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -68,10 +69,10 @@ export const SurpriseScene: React.FC = () => {
             Scene XI · Intimate Secret
           </span>
           <h2 className="font-serif text-3xl sm:text-5xl text-ivory-50 tracking-[0.05em]">
-            {SURPRISE_DATA.title}
+            {surprise.title}
           </h2>
           <p className="font-sans text-xs sm:text-sm text-ivory-50/70 uppercase tracking-[0.2em] mt-3">
-            {SURPRISE_DATA.subtitle}
+            {surprise.subtitle}
           </p>
         </div>
 
@@ -132,7 +133,7 @@ export const SurpriseScene: React.FC = () => {
                 </div>
 
                 <p className="text-xs uppercase tracking-[0.25em] text-rosegold-300 mt-6 text-center">
-                  {SURPRISE_DATA.instruction}
+                  {surprise.instruction}
                 </p>
 
                 {/* Accessible direct click unlock */}
@@ -162,25 +163,25 @@ export const SurpriseScene: React.FC = () => {
                 </div>
 
                 <h3 className="font-serif text-3xl sm:text-4xl text-ivory-50">
-                  {SURPRISE_DATA.unlockedTitle}
+                  {surprise.unlockedTitle}
                 </h3>
 
                 <p className="font-serif italic text-lg sm:text-2xl text-blush-200 mt-6 max-w-2xl mx-auto leading-relaxed">
-                  &ldquo;{SURPRISE_DATA.secretMessage}&rdquo;
+                  &ldquo;{surprise.secretMessage}&rdquo;
                 </p>
 
                 {/* Treasured Revealed Photograph */}
                 <div className="relative w-full max-w-md h-64 sm:h-80 mx-auto my-8 rounded-2xl overflow-hidden border border-rosegold-400/60 shadow-luxury">
                   <Image
-                    src={SURPRISE_DATA.photo.src}
-                    alt={SURPRISE_DATA.photo.alt}
+                    src={surprise.photo.src}
+                    alt={surprise.photo.alt}
                     fill
                     className="object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-wine-950/80 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4">
                     <p className="font-serif italic text-sm text-ivory-50">
-                      {SURPRISE_DATA.photo.caption}
+                      {surprise.photo.caption}
                     </p>
                   </div>
                 </div>
